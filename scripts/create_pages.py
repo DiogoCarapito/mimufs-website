@@ -78,7 +78,7 @@ def write_streamlit_code_from_markdown(md_path, py_path):
                     f.write(f'st.markdown("""{buffer.strip()}""")\n\n')
                     buffer = ""
                 f.write(
-                    f'st.subheader("{re.sub(r"^## ", "", line).strip()}", anchor=False)\n\n'
+                    f'st.header("{re.sub(r"^## ", "", line).strip()}", anchor=False)\n\n'
                 )
                 # f.write(f'st.subheader("{re.sub(r"^## ", "", line).strip()}")\n\n')
             elif re.match(r"^### (.*)", line):
@@ -86,7 +86,7 @@ def write_streamlit_code_from_markdown(md_path, py_path):
                     f.write(f'st.markdown("""{buffer.strip()}""")\n\n')
                     buffer = ""
                 f.write(
-                    f'st.header("{re.sub(r"^### ", "", line).strip()}", anchor=False)\n\n'
+                    f'st.subheader("{re.sub(r"^### ", "", line).strip()}", anchor=False)\n\n'
                 )
                 # f.write(f'st.header("{re.sub(r"^### ", "", line).strip()}")\n\n')
 

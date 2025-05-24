@@ -28,12 +28,12 @@ vou mostrar os diferentes tipos de menus possiveis aqui no query.
 
 Vou vos apresentar os diferentes tipos de menus que existem no passo da query.""")
 
-st.subheader("Unidade Funcional", anchor=False)
+st.header("Unidade Funcional", anchor=False)
 
 st.markdown("""Começamos pela a unidade Fucnional.
 Este é fácil, é so escolher a nossa unidade. Nem sempre aparece mas quando aparece é so passar para o lado esquerdo e está feito.""")
 
-st.subheader("TEMPO", anchor=False)
+st.header("TEMPO", anchor=False)
 
 st.markdown("""Uma que invariavelmente aparece sempre é uma opção de escolha temporal, que pode ser
 
@@ -60,14 +60,14 @@ Ha ainda outra variante: há relatórios em que, podendo extrair 1 ano duma só 
 Isto acontece, por exemplo, se tentarmos obter as nas listagens de medicamentos prescritos de todos os médicos durante um ano (**P06.01.01.L03. Listagem de Medicamentos Prescritos por Utente - Marca e DCI**), em que facilmente pode resultar numa tabela com 100.000 linhas.
 A solução é partir o elefante às fatias. Experimenta-se com 1 ano, se não funcionar então faz-se em semestres ou trimestres, e junta-se à posteriori.""")
 
-st.subheader("ANO CONTRATUAL", anchor=False)
+st.header("ANO CONTRATUAL", anchor=False)
 
 st.markdown("""Agora vamos aos indicadores, onde é costume pedir o ano contratual
 Este também é muito simples.
 Basta selecionar o ano refernte aos indicadores que queremos analisar. Por definição nunca vem com o ano correto, portanto é preciso mudar sempre.
 Está feito""")
 
-st.subheader("INDICADORES E GRUPO DE INDICADORES", anchor=False)
+st.header("INDICADORES E GRUPO DE INDICADORES", anchor=False)
 
 st.markdown("""Ainda nos indicadores, se executarmos a query é costume apraecer um segundo menu com seleção e indicadores ou grupo de indicadores
 
@@ -103,7 +103,7 @@ mas não esquecer que o resultado dos indiadores no MIMUF costumam ter 1 a 2 mes
 
 Boa, voltamos ao MIMUF. Outro menu referetes a indicadores é o grupo de indicadores. este caso é relativamente simples, porque por definição estão todos selecionados. Raramente é necessário mudar, portanto é avançar sem fazer nada.""")
 
-st.subheader("ICPCS", anchor=False)
+st.header("ICPCS", anchor=False)
 
 st.markdown("""Vamos à escolha de ICPCs
 
@@ -121,7 +121,7 @@ Nesta janela até podemos adicionar mais do que um código ao mesmo tempo. Mas r
 
 os relatórios que permitem ver cormobilidadestêm têm 2 sitios diferentes para ICPCs, ICPC1 e ICPC2. Funcionam ambos da mesma forma, podemos colocar um ou vários. códigos ao mesmo tempo""")
 
-st.subheader("MCDTS e àrea de MCDT", anchor=False)
+st.header("MCDTS e àrea de MCDT", anchor=False)
 
 st.markdown("""Para os relatórios referentes a Prescrição ou resultados de MCDTs, habitualmente é necessário escolher a àrea de MCDT ou o MCDT espeficico na Query.
 
@@ -134,12 +134,12 @@ Aqui também podemos tirar o LDL, mas queria deixar uma nota: dependedo outra ve
 
 Quando falamos de listagens de prescrição de MCDTs, a forma de escolher é por àrea de MCDT. neste caso, se queremos as prescrições de MCDTs por utente de todas as areas temos de fazer 1 a 1. Mas se apenas precisamos saber contagens, o relatórios já nãpo têm essa limitação.""")
 
-st.subheader("BIOMETRIAS", anchor=False)
+st.header("BIOMETRIAS", anchor=False)
 
 st.markdown("""As biometrias funcionam  de forma muito parecida aos MCDTs.
 Uma novidade recente é que também já dá para tirar o indice de BARTEL que tenha sido registado no SCLINICO. e o DM deste e o registo a data de diagnóstico de DM, que é muito util para caracterização de diabeticos no curriculo ou para o calculo de SCORE 2 dad diabetes. Ainda assim Este menu permite apenas 1 seleção de cada vez.""")
 
-st.subheader("ESPECIAIS - Métricas e outros", anchor=False)
+st.header("ESPECIAIS - Métricas e outros", anchor=False)
 
 st.markdown("""Existe ainda menus especifícos que permitem adicionam filtros ou seleção de metricas ainda na query, mas não têm grande utilidade. Ainda assim, é necessário fazer uma seleção para poder avançar com a query
 

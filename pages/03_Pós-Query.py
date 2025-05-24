@@ -47,7 +47,7 @@ Boa.
 
 Esta é a lista de utentes inscritos para este medico de familia no mês que selecionamos. Já podiamos exportar""")
 
-st.subheader("Filtro -> coluna", anchor=False)
+st.header("Filtro -> coluna", anchor=False)
 
 st.markdown("""Agora imaginemos que queriamos a lista da UNIDADE TODA
 Singifica que tinjamos de tirar 10 vezes esta lista no caso do nosso centro de saude ter 10 medicos?
@@ -73,12 +73,12 @@ Basta escrever o nome da coluna aqui neste campo de pesuisa da barra de filtros 
 
 Neste caso a frequesia de habitação. Neste caso o novo filtro de freguesia de habitação bão tem uma opçao de todos, portanto podemos voltar a trás.""")
 
-st.subheader("Tabelas de dupla entrada", anchor=False)
+st.header("Tabelas de dupla entrada", anchor=False)
 
 st.markdown("""Vamos para outro relatório para demonstrar quão interessante podem ser estes 2 movimentos, em que podemos transformar a tabela por completo
 Vamos para A listagem P03.01.L01 Consultas > Utente""")
 
-st.subheader("Novo prompt", anchor=False)
+st.header("Novo prompt", anchor=False)
 
 st.markdown("""Imaginem que queriamos exatamente esta estrutura de tabela mas em vez do mes de maio, queriamos tirar do inicio do ano. podiamos clicar na seta de retroceder, mas teriamos de fazer estas transformações todas outra vez.
 Existe um botão que premite fazer uma nova query sem alterar a formatação atual dos dados
@@ -91,11 +91,11 @@ Alteramos a data para janeiro e executamos o relatório
 
 E aqui está tabela com a mesma estrutura mas com uma data diferente.""")
 
-st.subheader("Eliminar celulas unidas unidas", anchor=False)
+st.header("Eliminar celulas unidas unidas", anchor=False)
 
 st.markdown("""Ainda no mesmo relatório, se cikicarnis medico de familia
 
 vemos que criamos""")
 
-st.subheader("Exportação", anchor=False)
+st.header("Exportação", anchor=False)
 

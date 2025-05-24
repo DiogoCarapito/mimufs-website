@@ -6,6 +6,14 @@ import streamlit as st
 def func():
     return None
 
+def page_config():
+    st.set_page_config(
+        page_title="mimufs",
+        page_icon="assets/favicon.ico",
+        layout="wide",
+        initial_sidebar_state="auto",
+    )
+
 
 def render_markdown_with_media(file_path):
     root_path = file_path.split("/")[0]

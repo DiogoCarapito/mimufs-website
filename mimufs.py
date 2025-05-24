@@ -1,14 +1,20 @@
 import streamlit as st
-from utils.utils import render_pages_menu
+from utils.utils import page_config, render_pages_menu
+from utils.style import main_title
 
 # from utils.utils import render_markdown_with_media, render_pages_menu
 from scripts.create_pages import create_pages
 
 
 def main():
+    page_config()
+    
     create_pages()
 
-    st.title("mimufs - biblioteca python e tutoriais para o MIM@UF")
+    main_title("mimufs")
+    st.header("biblioteca python e tutoriais para o MIM@UF")
+
+    st.divider()
 
     render_pages_menu()
 
