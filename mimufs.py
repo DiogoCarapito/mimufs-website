@@ -1,0 +1,39 @@
+import streamlit as st
+from utils.utils import render_pages_menu
+
+# from utils.utils import render_markdown_with_media, render_pages_menu
+from scripts.create_pages import create_pages
+
+
+def main():
+    create_pages()
+
+    st.title("mimufs - biblioteca python e tutoriais para o MIM@UF")
+
+    render_pages_menu()
+
+    # # get all the markdown files in the content folder
+    # folder_path = "content/"
+    # markdown_files = [f for f in os.listdir(folder_path) if f.endswith(".md")]
+
+    # #sort the files
+    # markdown_files = markdown_files.sort()
+
+    # # create a dictionary to store the file names and their corresponding titles
+    # markdown_files_dict = {f.replace(".md", "").replace("-", " ").replace("_", " "): f for f in markdown_files}
+
+    # # create a selectbox with the markdown files
+    # selected_file = st.segmented_control("Select a tutorial", list(markdown_files_dict.keys()), selection_mode="single", default=list(markdown_files_dict.keys())[0])
+
+    # st.divider()
+
+    # if selected_file:
+    #     # render the markdown file with media
+    #     render_markdown_with_media(f"{folder_path}{markdown_files_dict[selected_file]}")
+
+    # else:
+    #     st.write("No file selected")
+
+
+if __name__ == "__main__":
+    main()
