@@ -1,6 +1,6 @@
 # website
 
-[![Github Actions Workflow](https://github.com/DiogoCarapito/mimufs-website/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/website/actions/workflows/main.yaml)
+[![Github Actions Workflow](https://github.com/DiogoCarapito/mimufs-website/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/mimufs-website/actions/workflows/main.yaml)
 
 mimufs - biblioteca python e tutoriais para o MIM@UF
 
