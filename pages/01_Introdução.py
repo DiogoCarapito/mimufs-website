@@ -2,15 +2,21 @@ import streamlit as st
 
 st.title("Introdução", anchor=False)
 
-st.markdown("""Então o que é o MIM@UF?
+st.markdown(
+    """Então o que é o MIM@UF?
 
 O MIM@UF é uma plataforma de extração dos dados que são gerados durante a actividade de uma unidade funcional dos cuidados de saúde primários.
 
-Permite ter acesso a dados relativamente abrangentes e com granularidade até ao utente, útil para trabalhos de investigação, projetos, auditorias, governação clínica, construção do currículo para o internato ou grau de consultor. É uma solução com dados à escala da unidade, eficiente e reprodutível, quando comparado a um registo manual tradicional.""")
+Permite ter acesso a dados relativamente abrangentes e com granularidade até ao utente, útil para trabalhos de investigação, projetos, auditorias, governação clínica, construção do currículo para o internato ou grau de consultor. É uma solução com dados à escala da unidade, eficiente e reprodutível, quando comparado a um registo manual tradicional."""
+)
 
-st.markdown("<p style='text-align: center; font-size: 20px; font-weight: bold;'> Dorothy followed her through many </p>", unsafe_allow_html=True)
+st.markdown(
+    "<p style='text-align: center; font-size: 20px; font-weight: bold;'> Dorothy followed her through many </p>",
+    unsafe_allow_html=True,
+)
 
-st.markdown("""Os dados vêm de várias fontes, como o SClinico, a PEM, e de plataformas com os dados de indicadores e vacinação. A maior parte encontra-se actualizado entre 1-2 meses até ao próprio dia, dependendo do tipo de dados.
+st.markdown(
+    """Os dados vêm de várias fontes, como o SClinico, a PEM, e de plataformas com os dados de indicadores e vacinação. A maior parte encontra-se actualizado entre 1-2 meses até ao próprio dia, dependendo do tipo de dados.
 
 Pode-se aceder na intranet do centro de saúde ou da ULS. Há vários perfis de acesso, como Médico, Enfermeiro e Interno, que diferem principalmente nos módulos disponíveis. Neste tutorial vou utiliar o perfil Médico
 
@@ -18,15 +24,20 @@ Pode-se aceder na intranet do centro de saúde ou da ULS. Há vários perfis de 
 
 
 
-O MIM@UF está organizado num sistema de pastas, sendo que estas pastas principais vou-lhes chamar de módulos""")
+O MIM@UF está organizado num sistema de pastas, sendo que estas pastas principais vou-lhes chamar de módulos"""
+)
 
-st.image("content/images/mimuf_inicio.jpg", caption="Página inical do MIM@UF com os vários módulos disponíveis")
+st.image(
+    "content/images/Inicio.png",
+    caption="Página inical do MIM@UF com os vários módulos disponíveis",
+)
 
-st.markdown("""Os gráficos que o MIM@UF disponibiliza são relativamente basicos e limitados. Este, por exemplo  permite fazer uma piramide etária rapidamente, mas estamos limitados na no tipo de dados e no estilo. Portanto, os relatórios e as listagens costumam ser mais interessantes
+st.markdown(
+    """Os gráficos que o MIM@UF disponibiliza são relativamente basicos e limitados. Este, por exemplo  permite fazer uma piramide etária rapidamente, mas estamos limitados na no tipo de dados e no estilo. Portanto, os relatórios e as listagens costumam ser mais interessantes
 
 A escolha entre relatórios e listagens depende da pergunta que estamos a responder:
 
-- Se queremos saber "**QUANTOS**Quantos utentes estão insctritos", então escolhemos um relatório
+- Se queremos saber "**QUANTOS** utentes estão insctritos", então escolhemos um relatório
 - Se queremos saber "**QUEM** são os utentes inscritos" então escolhemos uma listagem
 
 Ao entrar dentro desta pasta podemos ver que existir 3 tipos de opções: **Relatórios** e **Listagens** e **Gráficos**. Cada um destes responde a perguntas diferentes.
@@ -73,5 +84,5 @@ Ou então tarefas mais complexas, que após extração de várias listas e proce
 
 Estas perguntas permitem entender o que está a acontencer e desenhar estratégias para mudar procedimentos e pratica clínica com base em dados.
 
-Espero que esta série seja útil. No próximo video vou falar de técnicas de extração de dados dentro do MIM@UF, que são as bases para conseguir navegar eficazmente nesta plataforma""")
-
+Espero que esta série seja útil. No próximo video vou falar de técnicas de extração de dados dentro do MIM@UF, que são as bases para conseguir navegar eficazmente nesta plataforma"""
+)

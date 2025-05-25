@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.utils import page_config#, render_pages_menu
+from utils.utils import page_config  # , render_pages_menu
 from utils.style import main_title
 
 # from utils.utils import render_markdown_with_media, render_pages_menu
@@ -12,18 +12,17 @@ def main():
     create_pages()
 
     main_title("mimufs")
-    
+
     text = "Tutoriais para MIM@UF"
-    
+
     st.markdown(
         f'<p style="text-align: center; font-size: 32px;">{text}</p>',
         unsafe_allow_html=True,
     )
 
+    # st.divider()
 
-    #st.divider()
-
-    #render_pages_menu()
+    # render_pages_menu()
 
     # # get all the markdown files in the content folder
     # folder_path = "content/"

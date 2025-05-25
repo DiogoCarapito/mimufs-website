@@ -145,11 +145,12 @@ def write_streamlit_code_from_markdown(md_path, py_path):
                     f.write(f'st.markdown("""{buffer.strip()}""")\n\n')
                     buffer = ""
                 quote_text = re.sub(quote_pattern, r"\1", line).strip()
-                f.write(f'st.markdown("<p style=\'text-align: center; font-size: 20px; font-weight: bold;\'> {quote_text} </p>", unsafe_allow_html=True)\n\n')
-            
+                f.write(
+                    f"st.markdown(\"<p style='text-align: center; font-size: 20px; font-weight: bold;'> {quote_text} </p>\", unsafe_allow_html=True)\n\n"
+                )
+
             else:
                 buffer += line + "\n"
-                
 
         # Write any remaining buffer as markdown
         if buffer.strip():

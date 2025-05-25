@@ -2,7 +2,8 @@ import streamlit as st
 
 st.title("3 - Técnicas de extração de dados 2 - Depois da Query", anchor=False)
 
-st.markdown("""Olá
+st.markdown(
+    """Olá
 
 O video de hoje é uma continuação do anterior, onde exploramos tecnicas de extração de dados no MIMUF.
 
@@ -45,11 +46,13 @@ Mudamos para Todos e ja vemos que o numero de linhas, ou seja numero de untentes
 
 Boa.
 
-Esta é a lista de utentes inscritos para este medico de familia no mês que selecionamos. Já podiamos exportar""")
+Esta é a lista de utentes inscritos para este medico de familia no mês que selecionamos. Já podiamos exportar"""
+)
 
 st.header("Filtro -> coluna", anchor=False)
 
-st.markdown("""Agora imaginemos que queriamos a lista da UNIDADE TODA
+st.markdown(
+    """Agora imaginemos que queriamos a lista da UNIDADE TODA
 Singifica que tinjamos de tirar 10 vezes esta lista no caso do nosso centro de saude ter 10 medicos?
 
 Era uma hipotese, mas há uma forma desejável, que é juntar tudo na mesma tabela. Este é um dos truques mais poderosos que o MIMUF permite, e que abre um mar de possibilidades.
@@ -71,16 +74,20 @@ Podemos fazer o mesmo com qualquer filtro, temos de ter cuidado em escrever e ex
 O inverso também é possivel: podemos passar uma coluna para filtro
 Basta escrever o nome da coluna aqui neste campo de pesuisa da barra de filtros e clicar
 
-Neste caso a frequesia de habitação. Neste caso o novo filtro de freguesia de habitação bão tem uma opçao de todos, portanto podemos voltar a trás.""")
+Neste caso a frequesia de habitação. Neste caso o novo filtro de freguesia de habitação bão tem uma opçao de todos, portanto podemos voltar a trás."""
+)
 
 st.header("Tabelas de dupla entrada", anchor=False)
 
-st.markdown("""Vamos para outro relatório para demonstrar quão interessante podem ser estes 2 movimentos, em que podemos transformar a tabela por completo
-Vamos para A listagem P03.01.L01 Consultas > Utente""")
+st.markdown(
+    """Vamos para outro relatório para demonstrar quão interessante podem ser estes 2 movimentos, em que podemos transformar a tabela por completo
+Vamos para A listagem P03.01.L01 Consultas > Utente"""
+)
 
 st.header("Novo prompt", anchor=False)
 
-st.markdown("""Imaginem que queriamos exatamente esta estrutura de tabela mas em vez do mes de maio, queriamos tirar do inicio do ano. podiamos clicar na seta de retroceder, mas teriamos de fazer estas transformações todas outra vez.
+st.markdown(
+    """Imaginem que queriamos exatamente esta estrutura de tabela mas em vez do mes de maio, queriamos tirar do inicio do ano. podiamos clicar na seta de retroceder, mas teriamos de fazer estas transformações todas outra vez.
 Existe um botão que premite fazer uma nova query sem alterar a formatação atual dos dados
 
 Vamos ao menu DADOS e clicamos no botão com um ponto de interrogação verde
@@ -89,13 +96,15 @@ E voltamos ao menu do query, que está pre-selecionado com o nosso query origina
 
 Alteramos a data para janeiro e executamos o relatório
 
-E aqui está tabela com a mesma estrutura mas com uma data diferente.""")
+E aqui está tabela com a mesma estrutura mas com uma data diferente."""
+)
 
 st.header("Eliminar celulas unidas unidas", anchor=False)
 
-st.markdown("""Ainda no mesmo relatório, se cikicarnis medico de familia
+st.markdown(
+    """Ainda no mesmo relatório, se cikicarnis medico de familia
 
-vemos que criamos""")
+vemos que criamos"""
+)
 
 st.header("Exportação", anchor=False)
-
