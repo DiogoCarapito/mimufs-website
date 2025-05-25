@@ -8,11 +8,11 @@ from scripts.create_pages import create_pages
 
 def main():
     page_config()
-    
+
     create_pages()
 
     main_title("mimufs")
-    st.header("biblioteca python e tutoriais para o MIM@UF")
+    st.header("Tutoriais para MIM@UF")
 
     st.divider()
 

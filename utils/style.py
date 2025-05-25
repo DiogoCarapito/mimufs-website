@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 @st.cache_data()
 def main_title(text):
     if len(text) > 25:
