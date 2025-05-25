@@ -35,6 +35,7 @@ def write_streamlit_code_from_markdown(md_path, py_path):
     image_pattern = r"!\[([^\]]*)\]\(([^)]+)\)"
     link_pattern = r"\[([^\]]+)\]\(([^)]+)\)"
     iframe_pattern = r'<iframe[^>]*src="([^"]+)"[^>]*>.*?</iframe>'
+    quote_pattern = r"^> (.*)"
 
     comment_pattern = r"<!--(.*?)-->"
     # Remove HTML comments
@@ -137,8 +138,18 @@ def write_streamlit_code_from_markdown(md_path, py_path):
                 link_text = m.group(1).strip()
                 link_url = m.group(2).strip()
                 f.write(f'st.markdown("[{link_text}]({link_url})")\n\n')
+
+            elif re.match(quote_pattern, line):
+                # mkae it center, bold and italic, font 20
+                if buffer.strip():
+                    f.write(f'st.markdown("""{buffer.strip()}""")\n\n')
+                    buffer = ""
+                quote_text = re.sub(quote_pattern, r"\1", line).strip()
+                f.write(f'st.markdown("<p style=\'text-align: center; font-size: 20px; font-weight: bold;\'> {quote_text} </p>", unsafe_allow_html=True)\n\n')
+            
             else:
                 buffer += line + "\n"
+                
 
         # Write any remaining buffer as markdown
         if buffer.strip():
