@@ -1,8 +1,18 @@
 import streamlit as st
 
-st.title("P04. Probelmas e P05. Doenças", anchor=False)
+st.title("Title", anchor=False)
 
-st.header("Em construção", anchor=False)
+st.header("Subtitle", anchor=False)
+
+st.subheader("Header", anchor=False)
+
+st.markdown("""text""")
+
+st.info("""centererd highlight text""")
+st.image("content/images/Inicio.png", caption="image")
+st.markdown("[mimufs.com](https://mimufs.com)")
+
+st.video("https://www.youtube.com/watch?v=n3k-dIykQaw")
 
 st.divider()
 

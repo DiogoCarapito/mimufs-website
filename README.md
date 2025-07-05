@@ -24,7 +24,7 @@ source .venv/bin/activate
 #### build
 
 ```bash
-docker build -t Home:latest .
+docker build -t mimufs:latest .
 ````
 
 #### check image id
@@ -36,5 +36,5 @@ docker images
 #### run with image id
 
 ```bash
-docker run -p 8501:8501 Home:latest
+docker run -p 8501:8501 mimufs:latest
 ````

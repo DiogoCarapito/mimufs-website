@@ -1,24 +1,51 @@
 import streamlit as st
+import os
+
 from utils.utils import page_config  # , render_pages_menu
 from utils.style import main_title
 
 # from utils.utils import render_markdown_with_media, render_pages_menu
-from scripts.create_pages import create_pages
+# from scripts.create_pages import create_pages
+
+
+def load_css(file_name):
+    with open(file_name, encoding="utf-8") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
 def main():
     page_config()
 
-    create_pages()
+    css_file = os.path.join(os.path.dirname(__file__), "style/style.css")
+    load_css(css_file)
 
     main_title("mimufs")
 
-    text = "Tutoriais para MIM@UF"
+    pages = {
+        "Conceitos fundamentais": [
+            st.Page("pages/01_Introdução.py", title="1. Introdução"),
+            st.Page("pages/02_Query.py", title="2. Query"),
+            st.Page("pages/03_Pós-Query.py", title="3. Pós-Query"),
+            st.Page("pages/04_Exportação.py", title="4. Exportação"),
+            st.Page("pages/05_Processamento.py", title="5. Processamento"),
+        ],
+        "Módulos": [
+            st.Page("pages/06_P01_-_Inscritos.py", title="P01. Inscritos"),
+            st.Page("pages/07_P02_-_Indicadores.py", title="P02. Indicadores"),
+        ],
+        "Probelmas especificos": [],
+        "Currículo": [],
+    }
 
-    st.markdown(
-        f'<p style="text-align: center; font-size: 32px;">{text}</p>',
-        unsafe_allow_html=True,
-    )
+    pg = st.navigation(pages)  # , position="top")
+    pg.run()
+
+    # text = "Tutoriais para MIM@UF"
+
+    # st.markdown(
+    #     f'<p style="text-align: center; font-size: 32px;">{text}</p>',
+    #     unsafe_allow_html=True,
+    # )
 
     # st.divider()
 

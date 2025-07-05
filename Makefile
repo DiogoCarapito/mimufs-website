@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	pytest -vv --cov=mimufs --cov=pages --cov=scripts --cov=utils tests/test_*.py
+	pytest -vv --cov=MIMUF --cov=utils --cov=scripts --cov=pages tests/test_*.py
 
 format:
 	black . *.py

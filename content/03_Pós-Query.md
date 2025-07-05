@@ -1,10 +1,8 @@
-# 3 - Técnicas de extração de dados 2 - Depois da Query
+# 3 - Pó-Query
 
-Olá
+Depois da query o MIMUF apresenta-nos o resultado sob a forma de uma tabela. Neste interface temos várias opções para explorar. 
 
-O video de hoje é uma continuação do anterior, onde exploramos tecnicas de extração de dados no MIMUF.
-
-Hoje vamos falar dos truques e especificidades depoos de termos feito a nossa query - e acredito que é aqui que reside as maiores potencialidades do MIMUF que a maior parte das pessoas não sabe, uma vez que não são nada obvias à primeira vista.
+> É aqui que residem as maiores potencialidades do MIMUF que a maior parte das pessoas não sabe, uma vez que não são nada obvias à primeira vista.
 
 Imaginemos que queremos a minha lista de utentes inscritos para isso podemos utilizar o relatório **P01.01.L01 Inscritos**
 

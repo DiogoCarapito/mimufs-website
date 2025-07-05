@@ -1,0 +1,26 @@
+
+/* Aumentar o tamanho da fonte para todo o texto normal */
+p, li, div {
+    font-size: 20px !important;
+}
+
+/* Manter os tamanhos relativos dos cabeçalhos */
+h1 {
+    font-size: 2.5em !important;
+}
+h2 {
+    font-size: 2em !important;
+}
+h3 {
+    font-size: 1.5em !important;
+}
+
+/* Ajustar tamanho da fonte em outros elementos comuns */
+.stMarkdown, .stText {
+    font-size: 20px !important;
+}
+
+/* Ajustar tamanho da fonte nos widgets */
+.stSelectbox, .stMultiselect, .stRadio, .stCheckbox {
+    font-size: 20px !important;
+}

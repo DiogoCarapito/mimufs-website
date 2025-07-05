@@ -6,5 +6,8 @@ pytest-cov==4.1.0
 black==23.9.1
 #ipython==8.13.0
 
-streamlit>=1.45.0
+streamlit>=1.46.0
 watchdog
+
+html2image
+colorlog

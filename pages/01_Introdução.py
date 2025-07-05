@@ -2,87 +2,118 @@ import streamlit as st
 
 st.title("Introdução", anchor=False)
 
-st.markdown(
-    """Então o que é o MIM@UF?
-
-O MIM@UF é uma plataforma de extração dos dados que são gerados durante a actividade de uma unidade funcional dos cuidados de saúde primários.
-
-Permite ter acesso a dados relativamente abrangentes e com granularidade até ao utente, útil para trabalhos de investigação, projetos, auditorias, governação clínica, construção do currículo para o internato ou grau de consultor. É uma solução com dados à escala da unidade, eficiente e reprodutível, quando comparado a um registo manual tradicional."""
-)
+st.header("O que é o MIM@UF?", anchor=False)
 
 st.markdown(
-    "<p style='text-align: center; font-size: 20px; font-weight: bold;'> Dorothy followed her through many </p>",
-    unsafe_allow_html=True,
+    """O **MIM@UF** é uma plataforma de extração de dados desenvolvida para apoiar o trabalho nas unidades funcionais dos cuidados de saúde primários. Permite aceder a muitos dos dados gerados no dia-a-dia da unidade — de forma organizada, acessível e com um nível de detalhe que chega até ao utente.
+
+O **MIM@UF** é particularmente útil para:
+
+- **projetos de investigação**
+- **auditorias**
+- **trablahos de governação clínica**,
+- **currículo para internato e grau de consultor**
+
+Em vez de andar a fazer registos manuais, o **MIM@UF** oferece uma solução sistematizada, fiável e reprodutível, à escala da unidade."""
 )
+
+st.header("De onde vêm os dados?", anchor=False)
 
 st.markdown(
-    """Os dados vêm de várias fontes, como o SClinico, a PEM, e de plataformas com os dados de indicadores e vacinação. A maior parte encontra-se actualizado entre 1-2 meses até ao próprio dia, dependendo do tipo de dados.
+    """Os dados vêm de várias fontes, como o **SClínico**, a **PEM**, e plataformas de indicadores e vacinação. A atualização depende do tipo de dado: pode variar entre 1-2 meses até estar disponível quase em tempo real.
 
-Pode-se aceder na intranet do centro de saúde ou da ULS. Há vários perfis de acesso, como Médico, Enfermeiro e Interno, que diferem principalmente nos módulos disponíveis. Neste tutorial vou utiliar o perfil Médico
+O acesso é feito através da **intranet** do centro de saúde ou da ULS. Existem diferentes **perfis de utilizador** — Médico, Enfermeiro e Interno — e o conteúdo disponível varia ligeiramente conforme o perfil. Neste tutorial, vamos explorar a plataforma com o perfil **Médico**.
 
-
-
-
-
-O MIM@UF está organizado num sistema de pastas, sendo que estas pastas principais vou-lhes chamar de módulos"""
+Apesar de a plataforma já estar em funcionamento há vários anos, os relatórios continuam a poder sofrer atualizações. Por isso, este tutorial refere-se especificamente à versão em uso em 2025."""
 )
 
+st.header("Como está organizado o MIM@UF?", anchor=False)
+
+st.markdown(
+    """O **MIM@UF** está estruturado num sistema de pastas **módulos** uma destas pastas foca-se num tipo de dados ou função específica. Às vezes basta uma tabela para o que queremos saber. Outras vezes, temos de ir buscar dados a diferentes sítios e cruzar várias tabelas para obter a informação completa."""
+)
 st.image(
     "content/images/Inicio.png",
-    caption="Página inical do MIM@UF com os vários módulos disponíveis",
+    caption="Página inicial do MIM@UF com os vários módulos disponíveis",
+)
+st.markdown(
+    """Ao entrar, por exemplo, no módulo dos P01. Inscritos, podemos explorar os vários tipos de elementos dentro do **MIM@UF**.
+
+
+Há 4 elementos possiveis:
+
+- **Pastas** (icon de pasta)
+- **Gráficos** (contém letra **G** no nome e um ícone de gráfico)
+- **Relatórios** (contém letra **R** no nome)
+- **Listagens** (contém letra **L** no nome habitualmente dentro da pasta **Listagens**)"""
+)
+st.image(
+    "content/images/P01 Inscritos.png",
+    caption="Exemplo do Módulo P01. Inscritos, com Graficos, relatórios e a pasta para as Listagens",
+)
+st.markdown(
+    """Embora o **MIM@UF** tenha alguns gráficos integrados (como a clássica pirâmide etária), estes têm poucas opções de personalização. O verdadeiro valor está nos **relatórios** e nas **listagens**, que nos dão mais liberdade para exploração e cruzamento de dados.
+
+O nome de cada opção têm varias informações: onde está localizado, que tipo de elemento e um título descritivo."""
 )
 
+st.info(
+    """No caso do elemento **P01.01.L03. Inscritos > Dados dos Utentes**, localiza-se no Módulo P01 (Inscritos), pasta P01.01 (Listanges), tem um "L", portanto é uma listagem e pelo título terá alguma informação relativo a dados dos utentes."""
+)
+st.image(
+    "content/images/P01_01 Inscritos > Listagens.png",
+    caption="Interior da pasta das Listagens do módulo dos Inscritos - P01.01 Inscritos > Listagens",
+)
+st.header("Relatório ou Listagem?", anchor=False)
+
+st.markdown("""Tudo depende da **pergunta** que queremos responder:""")
+
+st.info(
+    """Se a nossa pergunta começa por **QUANTOS?** (ex: Quantos utentes...?, Quantos medicamentos?, Quantos doentes?) --- então escolhemos um **RELATÓRIO**."""
+)
+st.info(
+    """Se a nossa pergunta começa por **QUEM?** (ex: Quem são os utentes...?, Quem tem diabetes?, Quem tem resultados de HbA1c?, A quem foi prescrito insulina?) --- então escolhemos uma **LISTAGEM**."""
+)
+st.header("Começar com perguntas", anchor=False)
+
 st.markdown(
-    """Os gráficos que o MIM@UF disponibiliza são relativamente basicos e limitados. Este, por exemplo  permite fazer uma piramide etária rapidamente, mas estamos limitados na no tipo de dados e no estilo. Portanto, os relatórios e as listagens costumam ser mais interessantes
+    """A melhor forma de usar o **MIM@UF** é pensar em perguntas especificas. Alguns exemplos simples de perguntas que podem ser respondidas com o MIMUF:
 
-A escolha entre relatórios e listagens depende da pergunta que estamos a responder:
+- Quantos agregados familiares tenho na minha lista? E quantos membros por agregado?
+- Quais as nacionalidades, profissões e habilitações das pessoas inscritas?
+- Quais os resultados dos indicadores por equipa?
+- Quem não está a cumprir determinados indicadores?
+- Quem teve consulta no último trimestre e que tipo de consulta foi?
+- Quantas consultas fiz no 1.º semestre deste ano?
+- Qual é o “TOP” de diagnósticos na minha lista de problemas?
+- Quantos novos diagnósticos fiz no último trimestre?
+- Quem tem diagnóstico de HTA?
+- Que comorbilidades têm os utentes com HTA?
+- Que medicamentos tenho prescrito?
+- Qual o valor mais recente da TA ou da HbA1c de cada utente?
 
-- Se queremos saber "**QUANTOS** utentes estão insctritos", então escolhemos um relatório
-- Se queremos saber "**QUEM** são os utentes inscritos" então escolhemos uma listagem
+Se quisermos ir mais longe, é possivel fazer analises mais complexas como, que necessitam de extração de várias tabelas e cruzamento:
 
-Ao entrar dentro desta pasta podemos ver que existir 3 tipos de opções: **Relatórios** e **Listagens** e **Gráficos**. Cada um destes responde a perguntas diferentes.
+- Fazer uma lista completa de problemas por utente da unidade toda ou dos utentes que consultei
+- Calcular a taxa de filtração glomerular dos utentes todos
+- Calcular o **SCORE2** para toda a unidade
+- Realizar auditorias de indicadores e isolar diferentes tipos de não cumpridores 
+- Analisar de número de pedidos receituários por utente
+- Analisar custos de MCDTs e/ou Medicamentos"""
+)
 
-Se queremos um gráfico pré feito, então naturalmente escolhermos o grafico, que está reperentado por este icon sugestivo, ou por este **G** no nome. Este aqui disponibiliza uma primamide etária. São uma foma rapida mas relativamente limitada de extrair informação.
+st.header("Conclusão", anchor=False)
 
-Os mais interessantes são os relatórios e as listagens.
+st.markdown(
+    """
+O verdadeiro poder do **MIM@UF** está na capacidade de transformar perguntas em conhecimento. É esse processo que nos ajuda a entender a prática clínica de forma mais profunda e a promover melhorias sustentadas e informadas."""
+)
 
-Se a nossa pergunta for: "QUANTOS utentes estão inscritos na unidade?", então escolhemos um **Relatório**. Estão representados pela letra **R** no nome. Se a pergunta for "QUEM são os utentes inscrtios na unidade?" então temos de escolher uma **Listagem**, e ai abrimos *[IR PARA PASTA P01.01 LISTAGENS]* esta pagina e temos várias opções de listagens, todas com **L** no nome.
+st.divider()
 
-Vamos experimentar ver quantos utentes estão inscritos na minha lista:
-
-*[Exemplo de uma query: Número de inscritos]*
-
---- *[VOLTAR PARA O MENU PRINCIPAL]*
-
-Assim, podemos pensar sob a forma de pergunta sempre que queremos utilizar o MIM@UF.
-E é aqui que começamos a descobrir as potencialidades, porque podemos fazer muitas perguntas
-
-Por exemplo:
-
-- Quantas agregados familiares tenho na minha lista e quantos membros?
-- Quais as nacionalidades, profissão e habilitações profissionais da minha lista/unidade?
-- Quais os resultado dos indicadores por equipa
-- Quais são os não cumpridores de determinados indicadores
-- Quem teve consulta no último trimestre, por tipo de consulta?
-- Quantas consultas fiz no 1º semestre deste ano?
-- Qual o TOP de diagnósticos da lista de problemas da minha lista ou unidade
-- Quantos novos novos diagnósticos foram feitos no ultimo trimestre
-- Quem tem diagnóstico de HTA
-- Que comorbilidades tem os utentes com HTA
-- Que medicamentos prescrevi
-- Quais o valor mais recente de TA por utente
-- Qual o último valor de HbA1c
-
-Ou então tarefas mais complexas, que após extração de várias listas e processamento, podemos:
-
-- Lista de problemas completa de dos utentes
-- Calcular a taxa de filtração glomerular
-- Calcular o SCORE2 da unidade toda unidade
-- Auditorias de indicadores
-- Analise de utentes pedem muitos receituários
-- Analise de custos de MCDTs e Medicamentos
-
-Estas perguntas permitem entender o que está a acontencer e desenhar estratégias para mudar procedimentos e pratica clínica com base em dados.
-
-Espero que esta série seja útil. No próximo video vou falar de técnicas de extração de dados dentro do MIM@UF, que são as bases para conseguir navegar eficazmente nesta plataforma"""
+st.markdown(
+    '<div style="text-align: center;">'
+    '<p style="font-size: 16px;">Dúvidas, sugestões? Envia-nos um email para <a href="mailto:mgfhub.suporte@gmail.com" style="text-decoration: underline; font-size: 16px;">mgfhub.suporte@gmail.com</a></p>'
+    "</div>",
+    unsafe_allow_html=True,
 )
