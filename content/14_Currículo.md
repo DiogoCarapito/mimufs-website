@@ -1,3 +1,0 @@
-# Currículo
-
-## Em construção

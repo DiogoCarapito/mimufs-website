@@ -1,8 +1,8 @@
-# 3 - Pó-Query
+# Pós-Query
 
-Depois da query o MIMUF apresenta-nos o resultado sob a forma de uma tabela. Neste interface temos várias opções para explorar. 
+Depois da query o MIM@UF apresenta-nos o resultado sob a forma de uma tabela. Neste interface temos várias opções para explorar.
 
-> É aqui que residem as maiores potencialidades do MIMUF que a maior parte das pessoas não sabe, uma vez que não são nada obvias à primeira vista.
+> É aqui que residem as maiores potencialidades do MIM@UF que a maior parte das pessoas não sabe, uma vez que não são nada obvias à primeira vista.
 
 Imaginemos que queremos a minha lista de utentes inscritos para isso podemos utilizar o relatório **P01.01.L01 Inscritos**
 
@@ -48,7 +48,7 @@ Esta é a lista de utentes inscritos para este medico de familia no mês que sel
 Agora imaginemos que queriamos a lista da UNIDADE TODA
 Singifica que tinjamos de tirar 10 vezes esta lista no caso do nosso centro de saude ter 10 medicos?
 
-Era uma hipotese, mas há uma forma desejável, que é juntar tudo na mesma tabela. Este é um dos truques mais poderosos que o MIMUF permite, e que abre um mar de possibilidades.
+Era uma hipotese, mas há uma forma desejável, que é juntar tudo na mesma tabela. Este é um dos truques mais poderosos que o MIM@UF permite, e que abre um mar de possibilidades.
 
 Basicamente vamos transformar um dos filtros, neste caso Médico Familia, numa coluna
 

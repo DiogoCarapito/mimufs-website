@@ -1,15 +1,13 @@
-# Introdução
-
-## O que é o MIM@UF?
+# O que é o MIM@UF?
 
 O **MIM@UF** é uma plataforma de extração de dados desenvolvida para apoiar o trabalho nas unidades funcionais dos cuidados de saúde primários. Permite aceder a muitos dos dados gerados no dia-a-dia da unidade — de forma organizada, acessível e com um nível de detalhe que chega até ao utente.
 
 O **MIM@UF** é particularmente útil para:
-
-- **projetos de investigação**
-- **auditorias**
-- **trablahos de governação clínica**,
-- **currículo para internato e grau de consultor**
+    - **Projetos de investigação**
+    - **Auditorias**
+    - **Trabalhos de governação clínica**,
+    - **Currículo para internato e grau de consultor**
+    - **Estudo de lista**
 
 Em vez de andar a fazer registos manuais, o **MIM@UF** oferece uma solução sistematizada, fiável e reprodutível, à escala da unidade.
 
@@ -28,7 +26,6 @@ O **MIM@UF** está estruturado num sistema de pastas **módulos** uma destas pas
 ![Página inicial do MIM@UF com os vários módulos disponíveis](images/Inicio.png)
 
 Ao entrar, por exemplo, no módulo dos P01. Inscritos, podemos explorar os vários tipos de elementos dentro do **MIM@UF**.
-
 
 Há 4 elementos possiveis:
 
@@ -52,12 +49,11 @@ O nome de cada opção têm varias informações: onde está localizado, que tip
 Tudo depende da **pergunta** que queremos responder:
 
 > Se a nossa pergunta começa por **QUANTOS?** (ex: Quantos utentes...?, Quantos medicamentos?, Quantos doentes?) --- então escolhemos um **RELATÓRIO**.
-
 > Se a nossa pergunta começa por **QUEM?** (ex: Quem são os utentes...?, Quem tem diabetes?, Quem tem resultados de HbA1c?, A quem foi prescrito insulina?) --- então escolhemos uma **LISTAGEM**.
 
 ## Começar com perguntas
 
-A melhor forma de usar o **MIM@UF** é pensar em perguntas especificas. Alguns exemplos simples de perguntas que podem ser respondidas com o MIMUF:
+A melhor forma de usar o **MIM@UF** é pensar em perguntas especificas. Alguns exemplos simples de perguntas que podem ser respondidas com o MIM@UF:
 
 - Quantos agregados familiares tenho na minha lista? E quantos membros por agregado?
 - Quais as nacionalidades, profissões e habilitações das pessoas inscritas?

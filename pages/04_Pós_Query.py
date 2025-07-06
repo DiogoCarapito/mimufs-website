@@ -1,16 +1,13 @@
 import streamlit as st
 
-st.title("3 - Pó-Query", anchor=False)
+st.title("Pós-Query")
 
 st.markdown(
-    """Depois da query o MIMUF apresenta-nos o resultado sob a forma de uma tabela. Neste interface temos várias opções para explorar."""
-)
+    """Depois da query o MIM@UF apresenta-nos o resultado sob a forma de uma tabela. Neste interface temos várias opções para explorar.
 
-st.info(
-    """É aqui que residem as maiores potencialidades do MIMUF que a maior parte das pessoas não sabe, uma vez que não são nada obvias à primeira vista."""
-)
-st.markdown(
-    """Imaginemos que queremos a minha lista de utentes inscritos para isso podemos utilizar o relatório **P01.01.L01 Inscritos**
+> É aqui que residem as maiores potencialidades do MIM@UF que a maior parte das pessoas não sabe, uma vez que não são nada obvias à primeira vista.
+
+Imaginemos que queremos a minha lista de utentes inscritos para isso podemos utilizar o relatório **P01.01.L01 Inscritos**
 
 Vamos executar um query, pode ser nesta data
 Aqui nesta parte do query vamos escolher -nenhum-, para evitar algumas limitações chatas e Executamos o relatório
@@ -50,13 +47,13 @@ Boa.
 Esta é a lista de utentes inscritos para este medico de familia no mês que selecionamos. Já podiamos exportar"""
 )
 
-st.header("Filtro -> coluna", anchor=False)
+st.subheader("Filtro -> coluna")
 
 st.markdown(
     """Agora imaginemos que queriamos a lista da UNIDADE TODA
 Singifica que tinjamos de tirar 10 vezes esta lista no caso do nosso centro de saude ter 10 medicos?
 
-Era uma hipotese, mas há uma forma desejável, que é juntar tudo na mesma tabela. Este é um dos truques mais poderosos que o MIMUF permite, e que abre um mar de possibilidades.
+Era uma hipotese, mas há uma forma desejável, que é juntar tudo na mesma tabela. Este é um dos truques mais poderosos que o MIM@UF permite, e que abre um mar de possibilidades.
 
 Basicamente vamos transformar um dos filtros, neste caso Médico Familia, numa coluna
 
@@ -78,14 +75,14 @@ Basta escrever o nome da coluna aqui neste campo de pesuisa da barra de filtros 
 Neste caso a frequesia de habitação. Neste caso o novo filtro de freguesia de habitação bão tem uma opçao de todos, portanto podemos voltar a trás."""
 )
 
-st.header("Tabelas de dupla entrada", anchor=False)
+st.subheader("Tabelas de dupla entrada")
 
 st.markdown(
     """Vamos para outro relatório para demonstrar quão interessante podem ser estes 2 movimentos, em que podemos transformar a tabela por completo
 Vamos para A listagem P03.01.L01 Consultas > Utente"""
 )
 
-st.header("Novo prompt", anchor=False)
+st.subheader("Novo prompt")
 
 st.markdown(
     """Imaginem que queriamos exatamente esta estrutura de tabela mas em vez do mes de maio, queriamos tirar do inicio do ano. podiamos clicar na seta de retroceder, mas teriamos de fazer estas transformações todas outra vez.
@@ -100,7 +97,7 @@ Alteramos a data para janeiro e executamos o relatório
 E aqui está tabela com a mesma estrutura mas com uma data diferente."""
 )
 
-st.header("Eliminar celulas unidas unidas", anchor=False)
+st.subheader("Eliminar celulas unidas unidas")
 
 st.markdown(
     """Ainda no mesmo relatório, se cikicarnis medico de familia
@@ -108,13 +105,4 @@ st.markdown(
 vemos que criamos"""
 )
 
-st.header("Exportação", anchor=False)
-
-st.divider()
-
-st.markdown(
-    '<div style="text-align: center;">'
-    '<p style="font-size: 16px;">Dúvidas, sugestões? Envia-nos um email para <a href="mailto:mgfhub.suporte@gmail.com" style="text-decoration: underline; font-size: 16px;">mgfhub.suporte@gmail.com</a></p>'
-    "</div>",
-    unsafe_allow_html=True,
-)
+st.subheader("Exportação")

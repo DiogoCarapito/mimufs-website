@@ -24,3 +24,8 @@ h3 {
 .stSelectbox, .stMultiselect, .stRadio, .stCheckbox {
     font-size: 20px !important;
 }
+
+/* increase font on sidebar link and text */
+.sidebar-nav-link, .sidebar-nav-text {
+    font-size: 18px !important;
+}

@@ -21,21 +21,97 @@ def main():
 
     main_title("mimufs")
 
-    pages = {
-        "Conceitos fundamentais": [
-            st.Page("pages/01_Introdução.py", title="1. Introdução"),
-            st.Page("pages/02_Query.py", title="2. Query"),
-            st.Page("pages/03_Pós-Query.py", title="3. Pós-Query"),
-            st.Page("pages/04_Exportação.py", title="4. Exportação"),
-            st.Page("pages/05_Processamento.py", title="5. Processamento"),
-        ],
-        "Módulos": [
-            st.Page("pages/06_P01_-_Inscritos.py", title="P01. Inscritos"),
-            st.Page("pages/07_P02_-_Indicadores.py", title="P02. Indicadores"),
-        ],
-        "Probelmas especificos": [],
-        "Currículo": [],
-    }
+    sidebar_menu_structure = [
+        {
+            "menu": "Conceitos fundamentais",
+            "page": "pages/01_Introdução.py",
+            "title": "a) Introdução",
+        },
+        {
+            "menu": "Conceitos fundamentais",
+            "page": "pages/02_Workflow.py",
+            "title": "b) Workflow",
+        },
+        {
+            "menu": "Conceitos fundamentais",
+            "page": "pages/03_Query.py",
+            "title": "c) Query",
+        },
+        {
+            "menu": "Conceitos fundamentais",
+            "page": "pages/04_Pós_Query.py",
+            "title": "d) Pós-Query",
+        },
+        {
+            "menu": "Conceitos fundamentais",
+            "page": "pages/05_Exportação.py",
+            "title": "e) Exportação",
+        },
+        {
+            "menu": "Conceitos fundamentais",
+            "page": "pages/06_Processamento.py",
+            "title": "f) Processamento",
+        },
+        {
+            "menu": "Módulos",
+            "page": "pages/11_P01_Inscritos.py",
+            "title": "P01. Inscritos",
+        },
+        {
+            "menu": "Módulos",
+            "page": "pages/12_P02_Indicadores.py",
+            "title": "P02. Indicadores",
+        },
+        {
+            "menu": "Módulos",
+            "page": "pages/13_P03_Consultas.py",
+            "title": "P03. Consultas",
+        },
+        {
+            "menu": "Módulos",
+            "page": "pages/14_P04_Problemas_e_P05_Doenças.py",
+            "title": "P04. Problemas e P05. Doenças",
+        },
+        {
+            "menu": "Módulos",
+            "page": "pages/15_P06_Medicamentos.py",
+            "title": "P06. Medicamentos",
+        },
+        {"menu": "Módulos", "page": "pages/16_P07_MCDTs.py", "title": "P07. MCDTs"},
+        {"menu": "Módulos", "page": "pages/17_P09_Vacinas.py", "title": "P09. Vacinas"},
+        {
+            "menu": "Módulos",
+            "page": "pages/18_P10_Biometrias.py",
+            "title": "P10. Biometrias",
+        },
+        # {"menu": "Probelmas especificos", "page":"pages/19_P11_Probelmas_Especificos.py", "title": "P11. Problemas Específicos"},
+        {
+            "menu": "Currículo",
+            "page": "pages/30_Lista_consultas_realizadas.py",
+            "title": "1. Lista de consultas realizadas",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/31_Lista_utentes_inscritos.py",
+            "title": "2. Lista de utentes inscritos",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/32_Nacionalidade_profissão_habilitações.py",
+            "title": "3. Nacionalidade, profissão e habilitações",
+        },
+    ]
+
+    pages = {}
+    for item in sidebar_menu_structure:
+        menu = item["menu"]
+        page = item["page"]
+        title = item["title"]
+
+        if menu not in pages:
+            pages[menu] = []
+
+        pages[menu].append(st.Page(page, title=title))
 
     pg = st.navigation(pages)  # , position="top")
     pg.run()
