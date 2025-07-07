@@ -10,11 +10,69 @@ from utils.style import main_title
 
 def load_css(file_name):
     with open(file_name, encoding="utf-8") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+        css_content = f.read()
+
+    # Apply theme-specific styles based on session state
+    if st.session_state.get("dark_mode", False):
+        # Dark theme styles
+        dark_theme_css = """
+        /* Dark theme overrides */
+        .stApp {
+            background-color: #0e1117;
+            color: #fafafa;
+        }
+        .stSidebar {
+            background-color: #262730;
+        }
+        .stSidebar .sidebar-content {
+            background-color: #262730;
+        }
+        /* Dark theme for navigation */
+        .stNavigation {
+            background-color: #262730;
+        }
+        /* Dark theme for markdown content */
+        .stMarkdown {
+            color: #fafafa;
+        }
+        /* Dark theme for text elements */
+        p, li, div, span {
+            color: #fafafa !important;
+        }
+        /* Dark theme for headers */
+        h1, h2, h3, h4, h5, h6 {
+            color: #fafafa !important;
+        }
+        /* Dark theme for buttons and widgets */
+        .stButton > button {
+            background-color: #262730;
+            color: #fafafa;
+            border: 1px solid #4a4a4a;
+        }
+        .stButton > button:hover {
+            background-color: #3a3a3a;
+            border-color: #6a6a6a;
+        }
+        """
+        css_content += dark_theme_css
+
+    st.markdown(f"<style>{css_content}</style>", unsafe_allow_html=True)
 
 
 def main():
     page_config()
+
+    # Initialize theme in session state
+    if "dark_mode" not in st.session_state:
+        st.session_state.dark_mode = False
+
+    # Add theme toggle in sidebar
+    with st.sidebar:
+        st.session_state.dark_mode = st.toggle(
+            "🌙 Dark Mode",
+            value=st.session_state.dark_mode,
+            help="Toggle between light and dark themes",
+        )
 
     css_file = os.path.join(os.path.dirname(__file__), "style/style.css")
     load_css(css_file)
