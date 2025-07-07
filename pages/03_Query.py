@@ -31,11 +31,12 @@ st.markdown(
 Para que serve a data e o periodo de tempo?
 
 > A data quando o relatório proprciona "fotografia" de um momento específico, Habitualmente são dados que mudam apenas mensalmente, que ser por exemplo para ver a lista de untentes inscritos ou resultados de indicadores. Outro exemplo em que visão "fotografia" se aplica são resutlados de MCDTs ou biometrias, onde o **MIM@UF** nos dá o valor mais recente registado à data da "fotografia".
+
 > O periodo temporal faz sentido quando a infomração que procuramos acontece com registos com elevada frequência, como por exemplo consultas ou prescições de MCDTs e medicamentos, que acontencem dezenas a centenas de vezes por dia. então ai escolhemos uma janela de tempo no qual queremos analisar.
 
 Habitualmente o **MIM@UF** apresenta-nos uma interface adequada ao tipo de referencia temporal que o relatório permite, mas nem sempre está correto
 
-Por exemplo, logo no primeiro relatório de todos, no **P01.R01. Inscritos > Sexo e Grupo Etário** a interface que nos aparece é de um periodo temporal. 
+Por exemplo, logo no primeiro relatório de todos, no **P01.R01. Inscritos > Sexo e Grupo Etário** a interface que nos aparece é de um periodo temporal.
 
 ![Query do P01.R01. Inscritos > Sexo e Grupo Etário]()
 
@@ -83,6 +84,7 @@ Cuidado a escolher entre FX e FL - respetivamente, fixo e flutuante. E alguns do
 Com escolhemos entre flutuante e fixo? Depende do tipo de analise que queremos fazer com os indicadores
 
 > O flutuante serve para ver estado atual do cumprimento, ou seja, permite perceber se as as estratégias implementadas estão estão ou não a ter resultados.
+
 > O fixo permite projetar qual será o cumprimento do indicador no final do ano. É útil para descobrir utentes que serão futuros não cumpridores se nada acontecer.
 
 Vamos usar o exemplo do indicador 37 - **Proporção de utentes com diabetes com consulta de enfermagem no último ano**
@@ -167,9 +169,9 @@ st.header("Métricas")
 st.markdown(
     """Outro exemplo é nos TOP de faturação de MCDTs (**P07.02.R03. TOP MCDTs Aceites > Médico**) ou Medicamentos (**P06.02.R03. TOP Medicamentos Aceites > Médico**), onde aparece um menu para escolher qual metrica utilizar para ordenar o TOP. No fim vamos ter acesso a todas as metricas, portanto não é dramático esta seleção.
 
-![P07.02.R03. TOP MCDTs Aceites > Médico]()
+![P07.02.R03. TOP MCDTs Aceites - Médico]()
 
 Nas Biometrias (**P10.01.L01. Resultados Biométricos > Utente**) também existe uma seleção do tipo de resultado com possibilidade de adicionar filtros. Costumo não selecionar, uma vez que prefiro obter os dados todos e filtrar depois do que aplicar um limite à partida.
 
-![P10.01.L01. Resultados Biométricos > Utente]()"""
+![P10.01.L01. Resultados Biométricos - Utente]()"""
 )

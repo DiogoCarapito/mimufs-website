@@ -25,22 +25,22 @@ def main():
         {
             "menu": "Conceitos fundamentais",
             "page": "pages/01_Introdução.py",
-            "title": "a) Introdução",
+            "title": "a) Introdução ✅",
         },
         {
             "menu": "Conceitos fundamentais",
             "page": "pages/02_Workflow.py",
-            "title": "b) Workflow",
+            "title": "b) Workflow 🏗️",
         },
         {
             "menu": "Conceitos fundamentais",
             "page": "pages/03_Query.py",
-            "title": "c) Query",
+            "title": "c) Query 🏗️",
         },
         {
             "menu": "Conceitos fundamentais",
             "page": "pages/04_Pós_Query.py",
-            "title": "d) Pós-Query",
+            "title": "d) Pós-Query 🏗️",
         },
         {
             "menu": "Conceitos fundamentais",
@@ -88,12 +88,12 @@ def main():
         {
             "menu": "Currículo",
             "page": "pages/29_Introdução_ao_curriculo.py",
-            "title": "0. Introdução ao currículo",
+            "title": "0. Introdução ao currículo 🏗️",
         },
         {
             "menu": "Currículo",
             "page": "pages/30_Lista_consultas_realizadas.py",
-            "title": "1. Lista de consultas realizadas",
+            "title": "1. Lista de consultas realizadas 🏗️",
         },
         {
             "menu": "Currículo",
