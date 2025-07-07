@@ -32,11 +32,13 @@ st.subheader("Situações onde o MIM@UF PODE AJUDAR mas não dá uma resposta di
 
 st.markdown(
     """Há informações (Ex: óbitos) que não estão disponíveis diretamente no MIM@UF, mas as suas listagens e relatórios permitem fazer uma aproximação da realidade:
-    - Medicação crónica de cada utente
-    - Lista de problemas de doença aguda diagnosticados\* - dá o número de diagnósticos (registados no A do SOAP) feitos por médico mas não dá a que utentes.
+
+- Medicação crónica de cada utente
+- Lista de problemas de doença aguda diagnosticados\* - dá o número de diagnósticos (registados no A do SOAP) feitos por médico mas não dá a que utentes.
 
 Pode ainda auxiliar a afunilar o trabalho de consulta manual:
-    - Óbitos (extraindo listas no início e fim do periodo de análise, e utentes que existam no início e não estão no fim sairam da lista, e certamente alguns serão óbitos)"""
+
+- Óbitos (extraindo listas no início e fim do periodo de análise, e utentes que existam no início e não estão no fim sairam da lista, e certamente alguns serão óbitos)"""
 )
 
 st.subheader("Situações onde o MIM@UF é omisso na construção do curriculo.")

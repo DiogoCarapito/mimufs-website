@@ -1,11 +1,7 @@
 # delete all content on pages/ folder
 import os
 import re
-import logging
-from logging_config import setup_logging
 import subprocess
-
-setup_logging()
 
 
 def delete_all_content_in_pages_folder():
@@ -132,21 +128,28 @@ def create_pages_from_markdown():
 
 
 def create_pages():
-    logging.info("Deleting all older content in pages folder")
+    # logging.info("Deleting all older content in pages folder")
     delete_all_content_in_pages_folder()
-    logging.info("Creating pages from markdown")
+    # logging.info("Creating pages from markdown")
     create_pages_from_markdown()
 
+    subprocess.run(["make", "format"], check=True)
+
     # Run make format command
-    try:
-        logging.info("Running make format")
-        subprocess.run(["make", "format"], check=True)
-        logging.info("make format completed successfully")
-    except subprocess.CalledProcessError as e:
-        logging.error(f"make format failed: {e}")
+    # try:
+    # logging.info("Running make format")
+    # subprocess.run(["make", "format"], check=True)
+    # logging.info("make format completed successfully")
+    # except subprocess.CalledProcessError as e:
+    # logging.error(f"make format failed: {e}")
 
 
 if __name__ == "__main__":
+    import logging
+    from logging_config import setup_logging
+
+    setup_logging()
+
     logging.info("Starting creating pages from markdown")
     create_pages()
     logging.info("Finished creating pages from markdown")

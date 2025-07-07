@@ -2,10 +2,10 @@ import streamlit as st
 import os
 
 from utils.utils import page_config  # , render_pages_menu
-from utils.style import main_title
+from utils.style import main_title, bottom_suport_email
 
 # from utils.utils import render_markdown_with_media, render_pages_menu
-# from scripts.create_pages import create_pages
+from scripts.create_pages import create_pages
 
 
 def load_css(file_name):
@@ -20,6 +20,9 @@ def main():
     load_css(css_file)
 
     main_title("mimufs")
+
+    # run create_pages()  # Create the pages directory if not exists
+    create_pages()
 
     sidebar_menu_structure = [
         {
@@ -175,6 +178,8 @@ def main():
 
     pg = st.navigation(pages)  # , position="top")
     pg.run()
+
+    bottom_suport_email()
 
     # text = "Tutoriais para MIM@UF"
 

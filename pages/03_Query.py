@@ -25,8 +25,9 @@ st.subheader("Escolha temporal")
 
 st.markdown(
     """Uma que invariavelmente aparece sempre é uma opção de escolha temporal, que pode ser:
-    - data (habitualmente através das escolha de um mês)
-    - periodo de tempo (que pode ter uma sleeção simples de um ano, semestre, trimestre, um mês, ou então composta, como com vários meses que não precisam de ser consecutivos. é particularmente util
+
+- data (habitualmente através das escolha de um mês)
+- periodo de tempo (que pode ter uma sleeção simples de um ano, semestre, trimestre, um mês, ou então composta, como com vários meses que não precisam de ser consecutivos. é particularmente util
 
 Para que serve a data e o periodo de tempo?
 
