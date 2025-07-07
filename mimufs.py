@@ -87,6 +87,11 @@ def main():
         # {"menu": "Probelmas especificos", "page":"pages/19_P11_Probelmas_Especificos.py", "title": "P11. Problemas Específicos"},
         {
             "menu": "Currículo",
+            "page": "pages/29_Introdução_ao_curriculo.py",
+            "title": "0. Introdução ao currículo",
+        },
+        {
+            "menu": "Currículo",
             "page": "pages/30_Lista_consultas_realizadas.py",
             "title": "1. Lista de consultas realizadas",
         },
@@ -99,6 +104,61 @@ def main():
             "menu": "Currículo",
             "page": "pages/32_Nacionalidade_profissão_habilitações.py",
             "title": "3. Nacionalidade, profissão e habilitações",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/33_Agregados_familiares.py",
+            "title": "4. Agregados familiares ",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/34_Indicadores_Unidade.py",
+            "title": "5. Indicadores Unidade",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/35_Indicadores_por_Médico.py",
+            "title": "6. Indicadores por Médico",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/36_Lista_problemas_utente.py",
+            "title": "7. Lista de Problemas por utente",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/37_Top_problemas.py",
+            "title": "8. Top Problemas",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/38_Novos_problemas_por_utente.py",
+            "title": "9. Novos problemas por utente",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/39_Problemas_agudos_por_médico.py",
+            "title": "10. Problemas agudos por médico",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/40_Risco_diabetes.py",
+            "title": "11. Risco Diabetes",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/41_Medicamentos_prescritos_utente.py",
+            "title": "12. Medicamentos prescrito por utente",
+        },
+        {
+            "menu": "Currículo",
+            "page": "pages/42_Medicamentos_prescritos_médico.py",
+            "title": "13. Medicamentos prescrito por Médico",
+        },
+        {
+            "menu": "Outros",
+            "page": "pages/98_sobre.py",
+            "title": "Sobre",
         },
     ]
 
