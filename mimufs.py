@@ -2,7 +2,7 @@ import streamlit as st
 import os
 
 from utils.utils import page_config  # , render_pages_menu
-from utils.style import main_title, bottom_suport_email
+from utils.style import main_title #, bottom_suport_email
 
 # from utils.utils import render_markdown_with_media, render_pages_menu
 from scripts.create_pages import create_pages
@@ -179,7 +179,7 @@ def main():
     pg = st.navigation(pages)  # , position="top")
     pg.run()
 
-    bottom_suport_email()
+    #bottom_suport_email()
 
     # text = "Tutoriais para MIM@UF"
 
