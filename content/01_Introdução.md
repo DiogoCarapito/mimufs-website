@@ -12,6 +12,8 @@ O **MIM@UF** é particularmente útil para:
 
 Em vez de andar a fazer registos manuais, o **MIM@UF** oferece uma solução sistematizada, fiável e reprodutível, à escala da unidade.
 
+---
+
 ## De onde vêm os dados?
 
 Os dados vêm de várias fontes, como o **SClínico**, a **PEM**, e plataformas de indicadores e vacinação. A atualização depende do tipo de dado: pode variar entre 1-2 meses até estar disponível quase em tempo real.
@@ -19,6 +21,8 @@ Os dados vêm de várias fontes, como o **SClínico**, a **PEM**, e plataformas 
 O acesso é feito através da **intranet** do centro de saúde ou da ULS. Existem diferentes **perfis de utilizador** — Médico, Enfermeiro e Interno — e o conteúdo disponível varia ligeiramente conforme o perfil. Neste tutorial, vamos explorar a plataforma com o perfil **Médico**.
 
 Apesar de a plataforma já estar em funcionamento há vários anos, os relatórios continuam a poder sofrer atualizações. Por isso, este tutorial refere-se especificamente à versão em uso em 2025.
+
+---
 
 ## Começar com perguntas
 
@@ -46,6 +50,7 @@ Se quisermos ir mais longe, é possivel fazer analises mais complexas como, que 
 - Analisar de número de pedidos receituários por utente
 - Analisar custos de MCDTs e/ou Medicamentos
 
-## Conclusão
+> O verdadeiro poder do **MIM@UF** está na capacidade de transformar perguntas em conhecimento. É esse processo que nos ajuda a entender a prática clínica de forma mais profunda e a promover melhorias sustentadas e informadas.
 
-O verdadeiro poder do **MIM@UF** está na capacidade de transformar perguntas em conhecimento. É esse processo que nos ajuda a entender a prática clínica de forma mais profunda e a promover melhorias sustentadas e informadas.
+Neste conjunto de tutoriais vamos explorar as potencialidades do MIM@UF, com guias passo a passo e técnicas para
+extrair dados de forma eficiente. Vamos aprender a navegar na plataforma, a fazer pedidos de dados e a exportar os dados para análise posterior.

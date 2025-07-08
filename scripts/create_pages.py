@@ -4,6 +4,15 @@ import re
 import subprocess
 
 
+# def apply_gradient_to_bold(text):
+#     # Replace **bold** with <span class="gradient-bold">bold</span>
+#     return re.sub(
+#         r"\*\*(.+?)\*\*",
+#         r'<span class="gradient-bold">\1</span>',
+#         text,
+#     )
+
+
 def delete_all_content_in_pages_folder():
     # check if pages/ folder exists
     if not os.path.exists("pages/"):
@@ -36,6 +45,7 @@ def write_streamlit_code_from_markdown(md_path, py_path):
     image_pattern = r"!\[([^\]]*)\]\(([^)]+)\)"
     link_pattern = r"\[([^\]]+)\]\(([^)]+)\)"
     iframe_pattern = r'<iframe[^>]*src="([^"]+)"[^>]*>.*?</iframe>'
+    blockquote_pattern = r"^>\s?(.*)"  # <-- Add this
 
     with open(py_path, "w", encoding="utf-8") as f:
         f.write("import streamlit as st\n\n")
@@ -46,31 +56,38 @@ def write_streamlit_code_from_markdown(md_path, py_path):
 
             if re.match(r"^# (.*)", line):
                 if buffer.strip():
-                    f.write(f'st.markdown("""{buffer.strip()}""")\n\n')
+                    f.write(
+                        f'st.markdown("""{buffer.strip()}""", unsafe_allow_html=True)\n\n'
+                    )
                     buffer = ""
-                f.write(
-                    # f'st.title("{re.sub(r"^# ", "", line).strip()}", anchor=False)\n\n'
-                    f'st.title("{re.sub(r"^# ", "", line).strip()}")\n\n'
-                )
+                f.write(f'st.title("{re.sub(r"^# ", "", line).strip()}")\n\n')
             elif re.match(r"^## (.*)", line):
                 if buffer.strip():
-                    f.write(f'st.markdown("""{buffer.strip()}""")\n\n')
+                    f.write(
+                        f'st.markdown("""{buffer.strip()}""", unsafe_allow_html=True)\n\n'
+                    )
                     buffer = ""
-                f.write(
-                    # f'st.subheader("{re.sub(r"^## ", "", line).strip()}", anchor=False)\n\n'
-                    f'st.subheader("{re.sub(r"^## ", "", line).strip()}")\n\n'
-                )
+                f.write(f'st.subheader("{re.sub(r"^## ", "", line).strip()}")\n\n')
             elif re.match(r"^### (.*)", line):
                 if buffer.strip():
-                    f.write(f'st.markdown("""{buffer.strip()}""")\n\n')
+                    f.write(
+                        f'st.markdown("""{buffer.strip()}""", unsafe_allow_html=True)\n\n'
+                    )
                     buffer = ""
-                f.write(
-                    # f'st.header("{re.sub(r"^### ", "", line).strip()}", anchor=False)\n\n'
-                    f'st.header("{re.sub(r"^### ", "", line).strip()}")\n\n'
-                )
+                f.write(f'st.header("{re.sub(r"^### ", "", line).strip()}")\n\n')
+            elif re.match(blockquote_pattern, line):
+                if buffer.strip():
+                    f.write(
+                        f'st.markdown("""{buffer.strip()}""", unsafe_allow_html=True)\n\n'
+                    )
+                    buffer = ""
+                quote_text = re.match(blockquote_pattern, line).group(1).strip()
+                f.write(f'st.info("""{quote_text}""")\n\n')
             elif re.match(iframe_pattern, line):
                 if buffer.strip():
-                    f.write(f'st.markdown("""{buffer.strip()}""")\n\n')
+                    f.write(
+                        f'st.markdown("""{buffer.strip()}""", unsafe_allow_html=True)\n\n'
+                    )
                     buffer = ""
                 iframe_src = re.search(iframe_pattern, line).group(1)
                 if iframe_src.startswith("http"):
@@ -84,7 +101,9 @@ def write_streamlit_code_from_markdown(md_path, py_path):
                     f.write(f'st.video("content/{iframe_src}", format="video/mp4")\n\n')
             elif re.match(image_pattern, line):
                 if buffer.strip():
-                    f.write(f'st.markdown("""{buffer.strip()}""")\n\n')
+                    f.write(
+                        f'st.markdown("""{buffer.strip()}""", unsafe_allow_html=True)\n\n'
+                    )
                     buffer = ""
                 m = re.match(image_pattern, line)
                 alt_text = m.group(1).strip()
@@ -92,18 +111,24 @@ def write_streamlit_code_from_markdown(md_path, py_path):
                 f.write(f'st.image("{img_path}", caption="{alt_text}")\n\n')
             elif re.match(link_pattern, line):
                 if buffer.strip():
-                    f.write(f'st.markdown("""{buffer.strip()}""")\n\n')
+                    f.write(
+                        f'st.markdown("""{buffer.strip()}""", unsafe_allow_html=True)\n\n'
+                    )
                     buffer = ""
                 m = re.match(link_pattern, line)
                 link_text = m.group(1).strip()
                 link_url = m.group(2).strip()
-                f.write(f'st.markdown("[{link_text}]({link_url})")\n\n')
+                f.write(
+                    f'st.markdown("[{link_text}]({link_url})", unsafe_allow_html=True)\n\n'
+                )
             else:
                 buffer += line + "\n"
 
         # Write any remaining buffer as markdown
         if buffer.strip():
-            f.write(f'st.markdown("""{buffer.strip()}""")\n\n')
+            f.write(f'st.markdown("""{buffer.strip()}""", unsafe_allow_html=True)\n\n')
+            # buffer_html = apply_gradient_to_bold(buffer.strip())
+            # f.write(f'st.markdown("""{buffer_html}""", unsafe_allow_html=True)\n\n')
 
 
 def create_pages_from_markdown():

@@ -33,7 +33,7 @@ def main():
         {
             "menu": "Conceitos fundamentais",
             "page": "pages/02_Workflow.py",
-            "title": "b) Workflow 🏗️",
+            "title": "b) Workflow ✅",
         },
         {
             "menu": "Conceitos fundamentais",
@@ -42,18 +42,18 @@ def main():
         },
         {
             "menu": "Conceitos fundamentais",
-            "page": "pages/04_Pós_Query.py",
-            "title": "d) Pós-Query 🏗️",
+            "page": "pages/04_Refinamento.py",
+            "title": "d) Refinamento 🏗️",
         },
         {
             "menu": "Conceitos fundamentais",
             "page": "pages/05_Exportação.py",
-            "title": "e) Exportação",
+            "title": "e) Exportação 🏗️",
         },
         {
             "menu": "Conceitos fundamentais",
             "page": "pages/06_Processamento.py",
-            "title": "f) Processamento",
+            "title": "f) Processamento ✅",
         },
         {
             "menu": "Módulos",

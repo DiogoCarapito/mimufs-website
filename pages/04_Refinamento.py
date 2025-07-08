@@ -1,13 +1,22 @@
 import streamlit as st
 
-st.title("Pós-Query")
+st.title("Refinamento")
 
 st.markdown(
-    """Depois da query o MIM@UF apresenta-nos o resultado sob a forma de uma tabela. Neste interface temos várias opções para explorar.
+    """Depois da Query, o MIM@UF apresenta-nos o resultado sob a forma de uma tabela, com opções para a podemos modificar. É nesta fase que podemos refinar os dados, filtrando, ordenando e transformando a tabela de acordo com as nossas necessidades.""",
+    unsafe_allow_html=True,
+)
 
-> É aqui que residem as maiores potencialidades do MIM@UF que a maior parte das pessoas não sabe, uma vez que não são nada obvias à primeira vista.
+st.info(
+    """É aqui que residem as maiores potencialidades do MIM@UF que desbloqueiam um grande potencial de manipulação de dados, uma vez que não são nada obvias à primeira vista."""
+)
+
+st.markdown(
+    """---
 
 Imaginemos que queremos a minha lista de utentes inscritos para isso podemos utilizar o relatório **P01.01.L01 Inscritos**
+
+---
 
 Vamos executar um query, pode ser nesta data
 Aqui nesta parte do query vamos escolher -nenhum-, para evitar algumas limitações chatas e Executamos o relatório
@@ -44,14 +53,15 @@ Mudamos para Todos e ja vemos que o numero de linhas, ou seja numero de untentes
 
 Boa.
 
-Esta é a lista de utentes inscritos para este medico de familia no mês que selecionamos. Já podiamos exportar"""
+Esta é a lista de utentes inscritos para este medico de familia no mês que selecionamos. Já podiamos exportar""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Filtro -> coluna")
 
 st.markdown(
     """Agora imaginemos que queriamos a lista da UNIDADE TODA
-Singifica que tinjamos de tirar 10 vezes esta lista no caso do nosso centro de saude ter 10 medicos?
+Significa que tinhamos de tirar 10 vezes esta lista no caso do nosso centro de saude ter 10 medicos?
 
 Era uma hipotese, mas há uma forma desejável, que é juntar tudo na mesma tabela. Este é um dos truques mais poderosos que o MIM@UF permite, e que abre um mar de possibilidades.
 
@@ -63,7 +73,7 @@ Clicamos na Lupa
 
 Aparece outra Lupa, clicamos nessa lupa e procuramos o nome do filtro que queremos tranformar para coluna:  Méd..
 
-Aqui está, Médico Familia. e clicamnos
+Aqui está, Médico Familia. e clicamos
 E vejam, o filtro desapareceu e reapareceu em coluna
 Não só temos a lista de utentes do centro de saude inteiro como temos o nome do Médico de Família para cada utente!
 
@@ -72,14 +82,16 @@ Podemos fazer o mesmo com qualquer filtro, temos de ter cuidado em escrever e ex
 O inverso também é possivel: podemos passar uma coluna para filtro
 Basta escrever o nome da coluna aqui neste campo de pesuisa da barra de filtros e clicar
 
-Neste caso a frequesia de habitação. Neste caso o novo filtro de freguesia de habitação bão tem uma opçao de todos, portanto podemos voltar a trás."""
+Neste caso a frequesia de habitação. Neste caso o novo filtro de freguesia de habitação bão tem uma opçao de todos, portanto podemos voltar a trás.""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Tabelas de dupla entrada")
 
 st.markdown(
     """Vamos para outro relatório para demonstrar quão interessante podem ser estes 2 movimentos, em que podemos transformar a tabela por completo
-Vamos para A listagem P03.01.L01 Consultas > Utente"""
+Vamos para A listagem P03.01.L01 Consultas > Utente""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Novo prompt")
@@ -94,7 +106,8 @@ E voltamos ao menu do query, que está pre-selecionado com o nosso query origina
 
 Alteramos a data para janeiro e executamos o relatório
 
-E aqui está tabela com a mesma estrutura mas com uma data diferente."""
+E aqui está tabela com a mesma estrutura mas com uma data diferente.""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Eliminar celulas unidas unidas")
@@ -102,7 +115,6 @@ st.subheader("Eliminar celulas unidas unidas")
 st.markdown(
     """Ainda no mesmo relatório, se cikicarnis medico de familia
 
-vemos que criamos"""
+vemos que criamos""",
+    unsafe_allow_html=True,
 )
-
-st.subheader("Exportação")

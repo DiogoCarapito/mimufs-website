@@ -3,13 +3,16 @@ import streamlit as st
 st.title("Query")
 
 st.markdown(
-    """A Query é o menu que permite fazer instrução para o pedido de dados inicial ao **MIM@UF**.
+    """Depois de escolher o relatório ou listagem que nos parece mais apropriado para a nossa pergunta, a **Query** é o passo seguinte que nos permite fazer instrução para o pedido de dados inicial ao MIM@UF.
 
 ![Exemplo do Menu de Query do relatório P...]()
 
-Fazemos a seleção nas caixas da esquerda para a direita e o botão para executar a query encontra-se no cano inferior esquerdo. Se faltar agluma coisa ao executar a query, o **MIM@UF** dá erro e diz o que falta.
+Habitualmente a seleção faz-se passando a opção das caixas da esquerda para a direita e o botão para executar a query encontra-se no canto inferior esquerdo. Se faltar agluma coisa ao executar a query, o MIM@UF dá erro e diz o que falta.
 
-Vou mostrar os diferentes tipos de menus possiveis"""
+De seguida mostrar os diferentes tipos de menus possíveis para a execução de uma Query, e como os utilizar corretamente.
+
+---""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Unidade Funcional")
@@ -17,8 +20,11 @@ st.subheader("Unidade Funcional")
 st.markdown(
     """![Menu de escolha de Unidade Funcional (P...)]()
 
-Começamos pela a unidade Fucnional.
-Este é fácil, é so escolher a nossa unidade. Nem sempre aparece mas quando aparece é so passar para o lado esquerdo e está feito."""
+Começamos pela a unidade Funcional.
+Este é fácil, é só escolher a nossa unidade. Nem sempre aparece mas quando aparece é só passar para o lado esquerdo e está feito.
+
+---""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Escolha temporal")
@@ -27,21 +33,28 @@ st.markdown(
     """Uma que invariavelmente aparece sempre é uma opção de escolha temporal, que pode ser:
 
 - data (habitualmente através das escolha de um mês)
-- periodo de tempo (que pode ter uma sleeção simples de um ano, semestre, trimestre, um mês, ou então composta, como com vários meses que não precisam de ser consecutivos. é particularmente util
+- periodo de tempo (que pode ter uma seleção simples de um ano, semestre, trimestre, um mês, ou então composta, como com vários meses que não precisam de ser consecutivos. é particularmente útil
 
-Para que serve a data e o periodo de tempo?
+Para que serve a data e o periodo de tempo?""",
+    unsafe_allow_html=True,
+)
 
-> A data quando o relatório proprciona "fotografia" de um momento específico, Habitualmente são dados que mudam apenas mensalmente, que ser por exemplo para ver a lista de untentes inscritos ou resultados de indicadores. Outro exemplo em que visão "fotografia" se aplica são resutlados de MCDTs ou biometrias, onde o **MIM@UF** nos dá o valor mais recente registado à data da "fotografia".
+st.info(
+    """A **data** quando o relatório proporciona **"fotografia"** de um momento específico, habitualmente são dados que mudam apenas mensalmente, que ser por exemplo para ver a lista de utentes inscritos ou resultados de indicadores. Outro exemplo em que visão "fotografia" se aplica são resultados de MCDTs ou biometrias, onde o MIM@UF nos dá o valor mais recente registado à data da "fotografia"."""
+)
 
-> O periodo temporal faz sentido quando a infomração que procuramos acontece com registos com elevada frequência, como por exemplo consultas ou prescições de MCDTs e medicamentos, que acontencem dezenas a centenas de vezes por dia. então ai escolhemos uma janela de tempo no qual queremos analisar.
+st.info(
+    """O **periodo temporal** faz sentido quando a informação que procuramos acontece com registos com elevada frequência, como por exemplo consultas ou prescições de MCDTs e medicamentos, que acontecem dezenas a centenas de vezes por dia. então ai escolhemos uma **janela de tempo** no qual queremos analisar."""
+)
 
-Habitualmente o **MIM@UF** apresenta-nos uma interface adequada ao tipo de referencia temporal que o relatório permite, mas nem sempre está correto
+st.markdown(
+    """Habitualmente o **MIM@UF** apresenta-nos uma interface adequada ao tipo de referencia temporal que o relatório permite, mas nem sempre está correto
 
 Por exemplo, logo no primeiro relatório de todos, no **P01.R01. Inscritos > Sexo e Grupo Etário** a interface que nos aparece é de um periodo temporal.
 
 ![Query do P01.R01. Inscritos > Sexo e Grupo Etário]()
 
-Imaginemos que o nosso centro de saude cerca de 10.000 utentes inscritos selecionarmos ano no periodo temporal, o **MIM@UF** vai nos dar o somatório de todos os meses, ou seja, cerca de 120.000 utentes inscritos. Isto não faz muito sentido. Se colocarmos só um mês já dá valores corretos. Assim, apesar do menu deste relatório menu permita selecionar periodos temporais, num contexto de contagem de inscrios o que faz sentido é uma data pleo que devemos optar por um mês
+Imaginemos que o nosso centro de saude cerca de 10.000 utentes inscritos selecionarmos ano no periodo temporal, o **MIM@UF** vai nos dar o somatório de todos os meses, ou seja, cerca de 120.000 utentes inscritos. Isto não faz muito sentido. Se colocarmos só um mês já dá valores corretos. Assim, apesar do menu deste relatório menu permita selecionar periodos temporais, num contexto de contagem de inscritos o que faz sentido é uma data pelo que devemos optar por um mês
 
 O contrário também pode acontecer, o relatório só deixar escolher um mês de cada vez, e se temos o azar de querermos um periodo de 1 ano, temos de repetir a extração do relatório 12 vezes, um para cada mês...
 
@@ -55,7 +68,10 @@ Isto acontece, por exemplo, se tentarmos obter as nas listagens de medicamentos 
 
 ![Query do P06.01.01.L03. Listagem de Medicamentos Prescritos por Utente - Marca e DCI]()
 
-A solução é partir o elefante às fatias. Experimenta-se com 1 ano, se não funcionar então faz-se em semestres ou trimestres, e junta-se à posteriori."""
+A solução é partir o elefante às fatias. Experimenta-se com 1 ano, se não funcionar então faz-se em semestres ou trimestres, e junta-se à posteriori.
+
+---""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Ano contratual")
@@ -66,7 +82,10 @@ Este também é muito simples.
 Basta selecionar o ano refernte aos indicadores que queremos analisar. Por definição nunca vem com o ano correto, portanto é preciso mudar sempre.
 Está feito!
 
-![Query do P02. ...]()"""
+![Query do P02. ...]()
+
+---""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Indicadores e Grupo de indicadores")
@@ -82,13 +101,20 @@ Habitualmente estão diponiveis mais de 200 indicadores e podem ser selecionados
 
 Cuidado a escolher entre FX e FL - respetivamente, fixo e flutuante. E alguns dos indicadores apenas têm uma das versões disponíveis.
 
-Com escolhemos entre flutuante e fixo? Depende do tipo de analise que queremos fazer com os indicadores
+Com escolhemos entre flutuante e fixo? Depende do tipo de analise que queremos fazer com os indicadores""",
+    unsafe_allow_html=True,
+)
 
-> O flutuante serve para ver estado atual do cumprimento, ou seja, permite perceber se as as estratégias implementadas estão estão ou não a ter resultados.
+st.info(
+    """O flutuante serve para ver estado atual do cumprimento, ou seja, permite perceber se as as estratégias implementadas estão estão ou não a ter resultados."""
+)
 
-> O fixo permite projetar qual será o cumprimento do indicador no final do ano. É útil para descobrir utentes que serão futuros não cumpridores se nada acontecer.
+st.info(
+    """O fixo permite projetar qual será o cumprimento do indicador no final do ano. É útil para descobrir utentes que serão futuros não cumpridores se nada acontecer."""
+)
 
-Vamos usar o exemplo do indicador 37 - **Proporção de utentes com diabetes com consulta de enfermagem no último ano**
+st.markdown(
+    """Vamos usar o exemplo do indicador 37 - **Proporção de utentes com diabetes com consulta de enfermagem no último ano**
 
 Assumindo que estamos em Maio, os cumpridores deste indicador pelo Flutuante tiveram pelo menos uma consutla de vigialncia de diabetes de enferamgem nos ultimos 12 meses: portanto, entre maio deste ano e junho do ano anterior.
 
@@ -104,7 +130,10 @@ No fim, o flutuante e o fixo complementa-se: o primeiro mostra o estado actual, 
 
 Nota: não esquecer que o resultado dos indiadores no **MIM@UF** costumam ter 1 a 2 meses de atraso)
 
-Boa, voltamos ao **MIM@UF**. Outro menu referetes a indicadores é o grupo de indicadores. este caso é relativamente simples, porque por definição estão todos selecionados. Raramente é necessário mudar, portanto é avançar sem fazer nada."""
+Boa, voltamos ao **MIM@UF**. Outro menu referetes a indicadores é o grupo de indicadores. este caso é relativamente simples, porque por definição estão todos selecionados. Raramente é necessário mudar, portanto é avançar sem fazer nada.
+
+---""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("ICPCs")
@@ -124,7 +153,10 @@ Removemos o codigo inciial e passamos para o campo direito o código que queremo
 
 Nesta janela até podemos adicionar mais do que um código ao mesmo tempo. Mas resultado vai depender especificamente o relatório em questão, pois nalguns relatórios podemos distinguir os codigos, noutros relatórios ele junta sem dizer quem é quem. Falarei destas especificidades no episódio sobre o Módulos de Probelemas e Doenças. Aqui o meu objetivo é apenas mostrar como utilizar corretamente esta parte da escolha dos ICPCS na Query.
 
-os relatórios que permitem ver cormobilidadestêm têm 2 sitios diferentes para ICPCs, ICPC1 e ICPC2. Funcionam ambos da mesma forma, podemos colocar um ou vários. códigos ao mesmo tempo"""
+os relatórios que permitem ver cormobilidadestêm têm 2 sitios diferentes para ICPCs, ICPC1 e ICPC2. Funcionam ambos da mesma forma, podemos colocar um ou vários. códigos ao mesmo tempo
+
+---""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("MCDTS e área de MCDT")
@@ -139,20 +171,27 @@ Para agravar as coisas, só podemos selecionar um de cada vez.
 
 Aqui também podemos tirar o LDL, mas queria deixar uma nota: dependedo outra vez dos hábitos de prescrição e registo de cada centro de saúde e laboratório, pode ser necessário tirar também o Colesterol total, HDL e Triglicéridos. Isto porque há laboratórios que calculam o LDL a partir do perfil e migra para o SCLINICO, outros não, e se calcularmos nós à posteriori o LDL a partir do perfil lipido com a formula de Friedewald, garantido que valores são referentes à mesma data de registo, aumentamos a rede e apanhamos mais LDLs.
 
-Quando falamos de listagens de prescrição de MCDTs, a forma de escolher é por àrea de MCDT. neste caso, se queremos as prescrições de MCDTs por utente de todas as areas temos de fazer 1 a 1. Mas se apenas precisamos saber contagens, o relatórios já nãpo têm essa limitação."""
+Quando falamos de listagens de prescrição de MCDTs, a forma de escolher é por àrea de MCDT. neste caso, se queremos as prescrições de MCDTs por utente de todas as areas temos de fazer 1 a 1. Mas se apenas precisamos saber contagens, o relatórios já nãpo têm essa limitação.
+
+---""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Biometrias")
 
 st.markdown(
     """As biometrias funcionam  de forma muito parecida aos MCDTs.
-Uma novidade recente é que também já dá para tirar o indice de BARTEL que tenha sido registado no SCLINICO. e o DM deste e o registo a data de diagnóstico de DM, que é muito util para caracterização de diabeticos no curriculo ou para o calculo de SCORE 2 dad diabetes. Ainda assim Este menu permite apenas 1 seleção de cada vez."""
+Uma novidade recente é que também já dá para tirar o indice de BARTEL que tenha sido registado no SCLINICO. e o DM deste e o registo a data de diagnóstico de DM, que é muito util para caracterização de diabeticos no curriculo ou para o calculo de SCORE 2 dad diabetes. Ainda assim Este menu permite apenas 1 seleção de cada vez.
+
+---""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Menus especiais")
 
 st.markdown(
-    """Existe ainda menus especifícos que permitem adicionam filtros ou seleção de metricas ainda na query, mas não têm grande utilidade. Ainda assim, é necessário fazer uma seleção para poder avançar com a query"""
+    """Existe ainda menus especifícos que permitem adicionam filtros ou seleção de metricas ainda na query, mas não têm grande utilidade. Ainda assim, é necessário fazer uma seleção para poder avançar com a query""",
+    unsafe_allow_html=True,
 )
 
 st.header("Filtros")
@@ -162,7 +201,8 @@ st.markdown(
 
 Por definição o **MIM@UF** seleciona este filtro mas na realidade vai introduzir limitações indesejadas, pelo que sugiro sempre alterar para -nenhum-
 
-![P01.01.L01]()"""
+![P01.01.L01]()""",
+    unsafe_allow_html=True,
 )
 
 st.header("Métricas")
@@ -174,5 +214,6 @@ st.markdown(
 
 Nas Biometrias (**P10.01.L01. Resultados Biométricos > Utente**) também existe uma seleção do tipo de resultado com possibilidade de adicionar filtros. Costumo não selecionar, uma vez que prefiro obter os dados todos e filtrar depois do que aplicar um limite à partida.
 
-![P10.01.L01. Resultados Biométricos - Utente]()"""
+![P10.01.L01. Resultados Biométricos - Utente]()""",
+    unsafe_allow_html=True,
 )

@@ -1,3 +1,55 @@
 import streamlit as st
 
 st.title("Exportação")
+
+st.markdown(
+    """Para poder descarregar os dados que obtemos, podemos utilizar o botão de exportação no Home, na barra superior.
+
+Este passo tem várias opções no que toca ao formato do ficheiro, bem como a inclusão ou não de metadados.""",
+    unsafe_allow_html=True,
+)
+
+st.image("content/images/Menu_Exportação.png", caption="Menu de exportação do MIM@UF")
+
+st.subheader("Excel com texto simples e Excel com formatação")
+
+st.markdown(
+    """O formato Excel é bastante prático, mas infelizmente o MIM@UF permite apenas exportar num formato antigo .xls, pelo que para a correta leitura dos dados é necessário abrir o ficheiro com o Microsoft Excel e exportar novamente para o formato .xlsx/Livro. Portanto é necessário ter no nosso computador do Centro de Saúde o Microsoft Excel instalado.
+
+Evenutualmente o LibreOffice também poderá funcionar, mas não testei.
+
+Costumo usar a opção **Excel com texto simples**, não aprecio **Excel com formatação**, esteticamente datada.""",
+    unsafe_allow_html=True,
+)
+
+st.subheader("Arquivo em formato CSV")
+
+st.markdown(
+    """O CSV é um formato universal e simples e em teoria é um formato versátil, uma vez que pode ser lido por praticamente todas as aplicações de manipulação de dados. Ainda assim, não tenho o melhor experiencia com o formato especifico que o MIM@UF exporta, pelo que opto por exportar para Excel e depois converter para CSV já com Python, especialmente por habitualmente tenho tido mais facilidade em gerir os metadados pela via do Excel.""",
+    unsafe_allow_html=True,
+)
+
+st.subheader("HTML e Texto simples")
+
+st.markdown(
+    """Nunca experimentei. Não vejo potencial utilidade, mas são opções.""",
+    unsafe_allow_html=True,
+)
+
+st.subheader("Metadados")
+
+st.markdown(
+    """São as opções *Exportar título de relatório*, *Exportar informações de Paginar por* - aka filtros - e *Exportar detalhes do filtro* - aka Query.
+
+Esta informação é particularmente útil para à posteriori sabermos a origem dos dados e o que eles representam, até porque o título do relatório não é muito explicativo e quando extraímos dados em larga escala é fácil perdermos a noção do que cada ficheiro representa. ainda assim pode haver situações onde é legítimo não incluir os metadados.""",
+    unsafe_allow_html=True,
+)
+
+st.subheader("Outras opções")
+
+st.markdown(
+    """Não costumo mudar as outras opções.
+
+No caso de se querer modificar permanentemente das opções de exportações nas definições do MIM@UF é possível definir o *default*, que pode poupar cliques desnecessários.""",
+    unsafe_allow_html=True,
+)

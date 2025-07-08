@@ -1,4 +1,3 @@
-
 /* Aumentar o tamanho da fonte para todo o texto normal */
 p, li, div {
     font-size: 20px !important;
@@ -34,3 +33,4 @@ h3 {
 a {
     font-size: inherit !important;
 }
+

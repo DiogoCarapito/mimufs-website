@@ -13,7 +13,10 @@ O **MIM@UF** é particularmente útil para:
 - **Currículo para internato e grau de consultor**
 - **Estudo de lista**
 
-Em vez de andar a fazer registos manuais, o **MIM@UF** oferece uma solução sistematizada, fiável e reprodutível, à escala da unidade."""
+Em vez de andar a fazer registos manuais, o **MIM@UF** oferece uma solução sistematizada, fiável e reprodutível, à escala da unidade.
+
+---""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("De onde vêm os dados?")
@@ -23,7 +26,10 @@ st.markdown(
 
 O acesso é feito através da **intranet** do centro de saúde ou da ULS. Existem diferentes **perfis de utilizador** — Médico, Enfermeiro e Interno — e o conteúdo disponível varia ligeiramente conforme o perfil. Neste tutorial, vamos explorar a plataforma com o perfil **Médico**.
 
-Apesar de a plataforma já estar em funcionamento há vários anos, os relatórios continuam a poder sofrer atualizações. Por isso, este tutorial refere-se especificamente à versão em uso em 2025."""
+Apesar de a plataforma já estar em funcionamento há vários anos, os relatórios continuam a poder sofrer atualizações. Por isso, este tutorial refere-se especificamente à versão em uso em 2025.
+
+---""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Começar com perguntas")
@@ -51,11 +57,16 @@ Se quisermos ir mais longe, é possivel fazer analises mais complexas como, que 
 - Calcular o **SCORE2** para toda a unidade
 - Realizar auditorias de indicadores e isolar diferentes tipos de não cumpridores
 - Analisar de número de pedidos receituários por utente
-- Analisar custos de MCDTs e/ou Medicamentos"""
+- Analisar custos de MCDTs e/ou Medicamentos""",
+    unsafe_allow_html=True,
 )
 
-st.subheader("Conclusão")
+st.info(
+    """O verdadeiro poder do **MIM@UF** está na capacidade de transformar perguntas em conhecimento. É esse processo que nos ajuda a entender a prática clínica de forma mais profunda e a promover melhorias sustentadas e informadas."""
+)
 
 st.markdown(
-    """O verdadeiro poder do **MIM@UF** está na capacidade de transformar perguntas em conhecimento. É esse processo que nos ajuda a entender a prática clínica de forma mais profunda e a promover melhorias sustentadas e informadas."""
+    """Neste conjunto de tutoriais vamos explorar as potencialidades do MIM@UF, com guias passo a passo e técnicas para
+extrair dados de forma eficiente. Vamos aprender a navegar na plataforma, a fazer pedidos de dados e a exportar os dados para análise posterior.""",
+    unsafe_allow_html=True,
 )

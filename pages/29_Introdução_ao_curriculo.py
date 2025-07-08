@@ -7,7 +7,8 @@ st.markdown(
 
 Pode ser a até a base para análises mais complexas, como calculo do SCORE2 em larga escala ou Taxa de filtração glomerular.
 
-Infelizmente nem toda a informação que desejavamos está disponível, o que significa que mesmo com o MIM@UF é necessário colher alguns dados manualmente."""
+Infelizmente nem toda a informação que desejavamos está disponível, o que significa que mesmo com o MIM@UF é necessário colher alguns dados manualmente.""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Situações onde o MIM@UF é claramente SUPERIOR na construção do curriculo")
@@ -25,7 +26,8 @@ st.markdown(
 - Avaliação pela escala de Barthel
 - Peso, altura, IMC, TAs e TAd
 - Resultado de analises comuns (C. total, HDL, Trig., LDL, HbA1c, Creatinina, Albuminúria) - embora seja confuso econtrar o codigo correto na Query..
-- Medicamentos prescritos com DCI, nome comercial e grupo farmacológico\* - dado a grande quantidade de nomes de medicamentos no mercado, a analise pode ser difícil, pois o mesmo medicamento pode estar registado com nomes diferentes"""
+- Medicamentos prescritos com DCI, nome comercial e grupo farmacológico\* - dado a grande quantidade de nomes de medicamentos no mercado, a analise pode ser difícil, pois o mesmo medicamento pode estar registado com nomes diferentes""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Situações onde o MIM@UF PODE AJUDAR mas não dá uma resposta direta")
@@ -38,7 +40,8 @@ st.markdown(
 
 Pode ainda auxiliar a afunilar o trabalho de consulta manual:
 
-- Óbitos (extraindo listas no início e fim do periodo de análise, e utentes que existam no início e não estão no fim sairam da lista, e certamente alguns serão óbitos)"""
+- Óbitos (extraindo listas no início e fim do periodo de análise, e utentes que existam no início e não estão no fim sairam da lista, e certamente alguns serão óbitos)""",
+    unsafe_allow_html=True,
 )
 
 st.subheader("Situações onde o MIM@UF é omisso na construção do curriculo.")
@@ -50,5 +53,6 @@ st.markdown(
 - Texto excrito no SOAP de cada consulta
 - Tipo de Família
 - Todos\* os resultados de analises e relatórios de exames registados (excepto os mencionados antes)
-- Profissões \* e Habilitações \* - tecnicamente dá para tirar mas a minha experiencia é que >99% dos utentes não tem preenchido, mas admito que possa variar entre Centros de Saúde"""
+- Profissões \* e Habilitações \* - tecnicamente dá para tirar mas a minha experiencia é que >99% dos utentes não tem preenchido, mas admito que possa variar entre Centros de Saúde""",
+    unsafe_allow_html=True,
 )
