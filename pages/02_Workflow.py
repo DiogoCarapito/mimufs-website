@@ -3,9 +3,16 @@ import streamlit as st
 st.title("Workflow")
 
 st.markdown(
-    """O processo de extrair dados do **MIM@UF** pode ser dividido em vários passos, pelo que proponho o seguinte workflow:
+    """O processo de extrair dados do **MIM@UF** pode ser dividido em vários passos, pelo que proponho o seguinte workflow.""",
+    unsafe_allow_html=True,
+)
 
-1. Primeiro temos de escolher o **relatório ou listagem** que se adapta mais a pergunta que queremos responder. Se não conhecemos o MIM@UF, os títulos e descrições dos relatórios são uma ajuda
+st.image(
+    "content/images/workflow.png", caption="Workflow de extração de dados do MIM@UF"
+)
+
+st.markdown(
+    """1. Primeiro temos de escolher o **relatório ou listagem** que se adapta mais a pergunta que queremos responder. Se não conhecemos o MIM@UF, os títulos e descrições dos relatórios são uma ajuda
 
 2. Ao clicar no relatório/listagem que escolhemos, aparecenos uma interface para fazer o pedido de dados à base de dados. Este processo chama-se uma **Query** ou Prompt. É neste passo que introduzimos informação relevante para o pedido
 

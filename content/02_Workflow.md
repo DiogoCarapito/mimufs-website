@@ -1,6 +1,8 @@
 # Workflow
 
-O processo de extrair dados do **MIM@UF** pode ser dividido em vários passos, pelo que proponho o seguinte workflow:
+O processo de extrair dados do **MIM@UF** pode ser dividido em vários passos, pelo que proponho o seguinte workflow.
+
+![Workflow de extração de dados do MIM@UF](images/workflow.png)
 
 1. Primeiro temos de escolher o **relatório ou listagem** que se adapta mais a pergunta que queremos responder. Se não conhecemos o MIM@UF, os títulos e descrições dos relatórios são uma ajuda
 
