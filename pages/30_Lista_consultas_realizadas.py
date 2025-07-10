@@ -12,7 +12,7 @@ Voltando à questão: não basta saber só a lista de untetes que se fez consult
 )
 
 st.info(
-    """Para isto, só há um sitio que consegue extrair esta informação com este detalhe: o SClinico Administrativo."""
+    """Para isto, só há um sitio que consegue extrair esta informação com este detalhe: o **SClinico Administrativo**."""
 )
 
 st.markdown(
@@ -20,6 +20,47 @@ st.markdown(
 
 Felizmente o SClinico Administrativo têm. **E é muito simples tirar**. Só tem um senão - o ficheiro extraido é um PDF com tabelas e não um ficheiro .xlsx, portanto precisa de ser convertido depois, mas julgo que o próprio Excel faz essa conversão.
 
-Então, peçam a um administrativo da vossa unidade para abrir a sua sessão de Sclinico e vão a este menu:""",
+Então, peçam a um administrativo da vossa unidade para abrir a sua sessão de Sclinico para os seguintes passos:
+
+1. Ir ao menu de **Listagens**""",
     unsafe_allow_html=True,
+)
+
+st.image(
+    "content/images/consultas_sclinico_administrativo_1.jpeg",
+    caption="Sclinico Administrativo - Listagens",
+)
+
+st.markdown("""2. Selecionar a opção **L009 Eventos**""", unsafe_allow_html=True)
+
+st.image(
+    "content/images/consultas_sclinico_administrativo_2.jpeg",
+    caption="Sclinico Administrativo - Eventos",
+)
+
+st.markdown(
+    """3. Selecionar a data de inicio e fim, grupo profissional e nome do profissional""",
+    unsafe_allow_html=True,
+)
+
+st.image(
+    "content/images/consultas_sclinico_administrativo_3.jpeg",
+    caption="Sclinico Administrativo - Eventos",
+)
+
+st.markdown("""4. Clicar no botão **Calcular**""", unsafe_allow_html=True)
+
+st.image(
+    "content/images/consultas_sclinico_administrativo_4.jpeg",
+    caption="Sclinico Administrativo - Calcular",
+)
+
+st.markdown(
+    """5. É gerado um PDF com a lista de consultas realizadas com informação detalhada, que pode ser aberto em Excel e convertido para .xlsx""",
+    unsafe_allow_html=True,
+)
+
+st.image(
+    "content/images/consultas_sclinico_administrativo_5.jpeg",
+    caption="Sclinico Administrativo - PDF",
 )

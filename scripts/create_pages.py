@@ -67,14 +67,14 @@ def write_streamlit_code_from_markdown(md_path, py_path):
                         f'st.markdown("""{buffer.strip()}""", unsafe_allow_html=True)\n\n'
                     )
                     buffer = ""
-                f.write(f'st.subheader("{re.sub(r"^## ", "", line).strip()}")\n\n')
+                f.write(f'st.header("{re.sub(r"^## ", "", line).strip()}")\n\n')
             elif re.match(r"^### (.*)", line):
                 if buffer.strip():
                     f.write(
                         f'st.markdown("""{buffer.strip()}""", unsafe_allow_html=True)\n\n'
                     )
                     buffer = ""
-                f.write(f'st.header("{re.sub(r"^### ", "", line).strip()}")\n\n')
+                f.write(f'st.subheader("{re.sub(r"^### ", "", line).strip()}")\n\n')
             elif re.match(blockquote_pattern, line):
                 if buffer.strip():
                     f.write(

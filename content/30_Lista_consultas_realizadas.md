@@ -6,10 +6,30 @@
 
 Voltando à questão: não basta saber só a lista de untetes que se fez consulta, é necessário saber o **tipo de consulta**/programa associado, **presecial ou não presencial**, se o utente compareceu ou não, de quem foi a **iniciativa** e um número identificador (perferivelmente o Nº de utente, opcionalmente o NOP) para poder cruzar com outras listas relevantes.
 
-> Para isto, só há um sitio que consegue extrair esta informação com este detalhe: o SClinico Administrativo.
+> Para isto, só há um sitio que consegue extrair esta informação com este detalhe: o **SClinico Administrativo**.
 
 Isso, nem o MIM@UF dá este detalhe - especificamente o tipo de consulta - porque provalvelmente não está implementado (mas o SIARS e o BI-CSP têm essa informação...). A questão é que a informação do tipo de consulta não é universal para todos os centros de saúde - cada centro de saúde pode dar os nomes que entender aos tipos de consulta. As vezes até há vários nomes para o mesmo tipo de consulta...
 
 Felizmente o SClinico Administrativo têm. **E é muito simples tirar**. Só tem um senão - o ficheiro extraido é um PDF com tabelas e não um ficheiro .xlsx, portanto precisa de ser convertido depois, mas julgo que o próprio Excel faz essa conversão.
 
-Então, peçam a um administrativo da vossa unidade para abrir a sua sessão de Sclinico e vão a este menu:
+Então, peçam a um administrativo da vossa unidade para abrir a sua sessão de Sclinico para os seguintes passos:
+
+1. Ir ao menu de **Listagens**
+
+![Sclinico Administrativo - Listagens](images/consultas_sclinico_administrativo_1.jpeg)
+
+2. Selecionar a opção **L009 Eventos**
+
+![Sclinico Administrativo - Eventos](images/consultas_sclinico_administrativo_2.jpeg)
+
+3. Selecionar a data de inicio e fim, grupo profissional e nome do profissional
+
+![Sclinico Administrativo - Eventos](images/consultas_sclinico_administrativo_3.jpeg)
+
+4. Clicar no botão **Calcular**
+
+![Sclinico Administrativo - Calcular](images/consultas_sclinico_administrativo_4.jpeg)
+
+5. É gerado um PDF com a lista de consultas realizadas com informação detalhada, que pode ser aberto em Excel e convertido para .xlsx
+
+![Sclinico Administrativo - PDF](images/consultas_sclinico_administrativo_5.jpeg)

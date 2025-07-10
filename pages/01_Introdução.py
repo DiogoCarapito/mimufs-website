@@ -19,7 +19,7 @@ Em vez de andar a fazer registos manuais, o **MIM@UF** oferece uma solução sis
     unsafe_allow_html=True,
 )
 
-st.subheader("De onde vêm os dados?")
+st.header("De onde vêm os dados?")
 
 st.markdown(
     """Os dados vêm de várias fontes, como o **SClínico**, a **PEM**, e plataformas de indicadores e vacinação. A atualização depende do tipo de dado: pode variar entre 1-2 meses até estar disponível quase em tempo real.
@@ -32,7 +32,11 @@ Apesar de a plataforma já estar em funcionamento há vários anos, os relatóri
     unsafe_allow_html=True,
 )
 
-st.subheader("Começar com perguntas")
+st.header("Começar com perguntas")
+
+st.info(
+    """O verdadeiro poder do **MIM@UF** está na capacidade de transformar perguntas em conhecimento. É esse processo que nos ajuda a entender a prática clínica de forma mais profunda e a promover melhorias sustentadas e informadas."""
+)
 
 st.markdown(
     """A melhor forma de usar o **MIM@UF** é pensar em perguntas especificas. Alguns exemplos simples de perguntas que podem ser respondidas com o MIM@UF:
@@ -57,16 +61,9 @@ Se quisermos ir mais longe, é possivel fazer analises mais complexas como, que 
 - Calcular o **SCORE2** para toda a unidade
 - Realizar auditorias de indicadores e isolar diferentes tipos de não cumpridores
 - Analisar de número de pedidos receituários por utente
-- Analisar custos de MCDTs e/ou Medicamentos""",
-    unsafe_allow_html=True,
-)
+- Analisar custos de MCDTs e/ou Medicamentos
 
-st.info(
-    """O verdadeiro poder do **MIM@UF** está na capacidade de transformar perguntas em conhecimento. É esse processo que nos ajuda a entender a prática clínica de forma mais profunda e a promover melhorias sustentadas e informadas."""
-)
-
-st.markdown(
-    """Neste conjunto de tutoriais vamos explorar as potencialidades do MIM@UF, com guias passo a passo e técnicas para
+Neste conjunto de tutoriais vamos explorar as potencialidades do MIM@UF, com guias passo a passo e técnicas para
 extrair dados de forma eficiente. Vamos aprender a navegar na plataforma, a fazer pedidos de dados e a exportar os dados para análise posterior.""",
     unsafe_allow_html=True,
 )

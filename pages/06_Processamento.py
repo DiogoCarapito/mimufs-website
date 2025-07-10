@@ -7,7 +7,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.subheader("Python")
+st.header("Python")
 
 st.markdown(
     """O **Python** resolve vários problemas duma vez só, pois permite:
@@ -34,7 +34,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.subheader("Excel")
+st.header("Excel")
 
 st.markdown(
     """O velhinho **Excel** acaba por ser o *default* por ter um design grafico intuitivo, mas com funcionalidades avançadas incluidas. Para além disso, está instalado na maioria dos computadores. Tem a desvantagem de não ser tão eficiente para grandes volumes de dados ou análises complexas, mas é uma ferramenta muito versátil para manipulação de tabelas e cálculos simples.

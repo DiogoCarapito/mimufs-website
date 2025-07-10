@@ -1,0 +1,22 @@
+menu,page,title
+Conceitos fundamentais,pages/01_Introdução.py,a) Introdução ✅
+Conceitos fundamentais,pages/02_Workflow.py,b) Workflow ✅
+Conceitos fundamentais,pages/03_Query.py,c) Query ✅
+Conceitos fundamentais,pages/04_Refinamento.py,d) Refinamento 🏗️
+Conceitos fundamentais,pages/05_Exportação.py,e) Exportação ✅
+Conceitos fundamentais,pages/06_Processamento.py,f) Processamento ✅
+Currículo,pages/29_Introdução_ao_curriculo.py,0. Introdução ao currículo 🏗️
+Currículo,pages/30_Lista_consultas_realizadas.py,1. Lista de consultas realizadas 🏗️
+Currículo,pages/31_Lista_utentes_inscritos.py,2. Lista de utentes inscritos
+Currículo,pages/32_Nacionalidade_profissão_habilitações.py,"3. Nacionalidades, profissões e habilitações"
+Currículo,pages/33_Agregados_familiares.py,4. Agregados familiares 
+Currículo,pages/34_Indicadores_Unidade.py,5. Indicadores Unidade
+Currículo,pages/35_Indicadores_por_Médico.py,6. Indicadores por médico
+Currículo,pages/36_Lista_problemas_utente.py,7. Lista de problemas por utente
+Currículo,pages/37_Top_problemas.py,8. Top Problemas
+Currículo,pages/38_Novos_problemas_por_utente.py,9. Novos problemas por utente
+Currículo,pages/39_Problemas_agudos_por_médico.py,10. Problemas agudos por médico
+Currículo,pages/40_Risco_diabetes.py,11. Risco Diabetes
+Currículo,pages/41_Medicamentos_prescritos_utente.py,12. Medicamentos prescritos por utente
+Currículo,pages/42_Medicamentos_prescritos_médico.py,13. Medicamentos prescritos por médico
+Outros,pages/98_sobre.py,Sobre

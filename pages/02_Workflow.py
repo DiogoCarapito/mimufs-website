@@ -21,7 +21,7 @@ Todas estas etapas têm truques e especificidades que, quando bem utilizados, pe
     unsafe_allow_html=True,
 )
 
-st.subheader("Como está organizado o MIM@UF?")
+st.header("Como está organizado o MIM@UF?")
 
 st.markdown(
     """O **MIM@UF** está estruturado num sistema de pastas **módulos** uma destas pastas foca-se num tipo de dados ou função específica. Às vezes basta uma tabela para o que queremos saber. Outras vezes, temos de ir buscar dados a diferentes sítios e cruzar várias tabelas para obter a informação completa.""",
@@ -68,7 +68,7 @@ st.image(
 
 st.markdown("""---""", unsafe_allow_html=True)
 
-st.subheader("Relatório ou Listagem?")
+st.header("Relatório ou Listagem?")
 
 st.markdown(
     """Tudo depende da **pergunta** que queremos responder:

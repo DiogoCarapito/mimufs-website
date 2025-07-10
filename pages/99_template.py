@@ -2,9 +2,9 @@ import streamlit as st
 
 st.title("Title")
 
-st.subheader("Subtitle")
+st.header("Subtitle")
 
-st.header("Header")
+st.subheader("Header")
 
 st.markdown("""text""", unsafe_allow_html=True)
 

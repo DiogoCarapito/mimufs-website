@@ -26,6 +26,8 @@ Apesar de a plataforma já estar em funcionamento há vários anos, os relatóri
 
 ## Começar com perguntas
 
+> O verdadeiro poder do **MIM@UF** está na capacidade de transformar perguntas em conhecimento. É esse processo que nos ajuda a entender a prática clínica de forma mais profunda e a promover melhorias sustentadas e informadas.
+
 A melhor forma de usar o **MIM@UF** é pensar em perguntas especificas. Alguns exemplos simples de perguntas que podem ser respondidas com o MIM@UF:
 
 - Quantos agregados familiares tenho na minha lista? E quantos membros por agregado?
@@ -49,8 +51,6 @@ Se quisermos ir mais longe, é possivel fazer analises mais complexas como, que 
 - Realizar auditorias de indicadores e isolar diferentes tipos de não cumpridores
 - Analisar de número de pedidos receituários por utente
 - Analisar custos de MCDTs e/ou Medicamentos
-
-> O verdadeiro poder do **MIM@UF** está na capacidade de transformar perguntas em conhecimento. É esse processo que nos ajuda a entender a prática clínica de forma mais profunda e a promover melhorias sustentadas e informadas.
 
 Neste conjunto de tutoriais vamos explorar as potencialidades do MIM@UF, com guias passo a passo e técnicas para
 extrair dados de forma eficiente. Vamos aprender a navegar na plataforma, a fazer pedidos de dados e a exportar os dados para análise posterior.

@@ -4,7 +4,7 @@ p, li, div {
 }
 
 /* Manter os tamanhos relativos dos cabeçalhos */
-h1 {
+/* h1 {
     font-size: 2.5em !important;
 }
 h2 {
@@ -12,7 +12,7 @@ h2 {
 }
 h3 {
     font-size: 1.5em !important;
-}
+} */
 
 /* Ajustar tamanho da fonte em outros elementos comuns */
 .stMarkdown, .stText {
