@@ -24,6 +24,8 @@ def main():
 
     # run create_pages()  # Create the pages directory if not exists
     # create_pages()
+    
+        
 
     pages = {}
     with open("sidebar.csv", newline="", encoding="utf-8") as csvfile:
@@ -36,6 +38,19 @@ def main():
 
     pg = st.navigation(pages)
     pg.run()
+
+    # Place this after your navigation code
+    app_path = "content/app/app.exe"  # Update with your actual file path
+    if os.path.exists(app_path):
+        with open(app_path, "rb") as f:
+            st.sidebar.download_button(
+                label="Download app",
+                data=f,
+                file_name="app.exe",
+                mime="application/octet-stream"
+            )
+    else:
+        st.sidebar.warning("App file not found.")
 
     # bottom_suport_email()
 
